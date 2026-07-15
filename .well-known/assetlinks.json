@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.smartscan",
+      "sha256_cert_fingerprints": [
+        "74:9E:6F:57:98:AC:6B:7C:D8:34:26:39:05:45:31:E2:F4:D5:0F:E4:16:75:12:03:18:FD:61:56:5F:6D:C0:1D"
+      ]
+    }
+  }
+]
