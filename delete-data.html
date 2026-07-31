@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Data Deletion – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Request Data Deletion</h1>
+
+    <p>SmartScan is a document scanning and OCR application that helps you scan, organize, search, and back up your documents.</p>
+    <p>This page explains how to delete your SmartScan data. SmartScan stores your documents on your device and, only if you choose Google Drive Backup, in your own Google Drive account. SmartScan does not operate its own cloud storage or backend server for your documents.</p>
+
+    <h2>1. What Data Does SmartScan Store?</h2>
+    <p>Most SmartScan data belongs to you and lives in one of two places:</p>
+    <ul>
+        <li>On your device: your scanned document images, OCR text, search index, app preferences, and locally stored sign-in information.</li>
+        <li>In your Google Drive: if you enable Google Drive Backup, the selected documents you choose to back up are stored in your own Google Drive account.</li>
+    </ul>
+    <p>SmartScan does not run a server that stores your documents or OCR text.</p>
+
+    <h2>2. Delete Documents Stored on Your Device</h2>
+    <p>To delete documents and their OCR text from your device:</p>
+    <ul>
+        <li>Open SmartScan and go to the Files tab.</li>
+        <li>Select the document or documents you want to delete.</li>
+        <li>Use the delete option to remove them.</li>
+    </ul>
+    <p>To delete all SmartScan data from your device at once, you can also:</p>
+    <ul>
+        <li>Open your Android device's Settings, go to Apps, select SmartScan, and choose Clear storage or Clear data, or</li>
+        <li>Uninstall SmartScan.</li>
+    </ul>
+    <p>Clearing the app's data or uninstalling the app removes locally stored documents, OCR text, sign-in information, and app preferences from your device.</p>
+
+    <h2>3. Delete Documents Backed Up to Google Drive</h2>
+    <p>If you used Google Drive Backup, your backed-up documents are stored in your own Google Drive account. Deleting SmartScan from your device does not delete these files.</p>
+    <p>To delete backed-up documents:</p>
+    <ul>
+        <li>Open the SmartScan backup folder in your Google Drive, or</li>
+        <li>Open SmartScan, go to the Cloud tab, and delete the files from there.</li>
+    </ul>
+    <p>Because these files live in your Google Drive account, you can manage or permanently delete them through your Google Drive.</p>
+
+    <h2>4. Remove SmartScan's Access to Your Google Account</h2>
+    <p>To stop SmartScan from accessing your Google account:</p>
+    <ul>
+        <li>Open SmartScan, go to Settings, and sign out, or</li>
+        <li>Open your Google Account, go to Security, and manage third-party access to remove SmartScan.</li>
+    </ul>
+
+    <h2>5. Request Additional Deletion</h2>
+    <p>SmartScan does not operate its own cloud server, so there are no documents or personal data stored on a SmartScan-operated server to delete.</p>
+    <p>If you have a deletion request not covered by the steps above, contact us at: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> and include your request and the Google account used with SmartScan (if any).</p>
+
+    <h2>6. What Is Deleted and What Is Kept?</h2>
+    <p>When you delete your data using the steps above:</p>
+    <ul>
+        <li>Documents, images, and OCR text stored on your device are deleted.</li>
+        <li>Locally stored sign-in information (such as your name and email address) is deleted.</li>
+        <li>App preferences and the search index are deleted.</li>
+        <li>Backed-up documents in your own Google Drive are not deleted automatically. They remain in your Google Drive until you delete them, because they live in your account, not in SmartScan.</li>
+    </ul>
+
+    <h2>7. Data Retention</h2>
+    <p>SmartScan does not maintain its own cloud database containing your scanned documents.</p>
+    <p>Locally stored documents remain on your device until you delete them, clear the application's data, or uninstall the application.</p>
+    <p>Documents backed up to Google Drive remain in your Google Drive until you delete them or they are otherwise removed according to your Google Drive settings.</p>
+    <p>Information processed by third-party services such as Google Sign-In, Google Drive, Google AdMob, analytics/crash-reporting services, and Google Play is subject to those services' respective retention policies.</p>
+
+    <h2>8. Contact</h2>
+    <p>If you have questions about deleting your data or about this page, please contact:</p>
+    <p>Email: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Developer: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>
