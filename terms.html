@@ -4,143 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service – SmartScan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #F5F6F8;
             color: #1A1C1A;
             line-height: 1.7;
-            padding: 0;
-        }
-        .header {
-            background: linear-gradient(135deg, #607AFB 0%, #4A5FCC 100%);
-            padding: 48px 24px;
-            text-align: center;
-        }
-        .header h1 {
-            color: #fff;
-            font-size: 28px;
-            font-weight: 700;
-        }
-        .header p {
-            color: rgba(255,255,255,0.8);
-            font-size: 14px;
-            margin-top: 8px;
-        }
-        .container {
+            padding: 24px;
             max-width: 700px;
             margin: 0 auto;
-            padding: 32px 24px;
         }
-        h2 {
-            color: #607AFB;
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-        p { margin-bottom: 12px; color: #414942; font-size: 15px; }
-        ul { margin: 8px 0 16px 24px; }
-        li { margin-bottom: 6px; color: #414942; font-size: 15px; }
-        .plan-box {
-            background: #fff;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 16px 0;
-            border: 1px solid #E2E8F0;
-        }
-        .plan-box.free { border-left: 4px solid #FFB800; }
-        .plan-box.premium { border-left: 4px solid #607AFB; }
-        .plan-box h3 { font-size: 15px; margin-bottom: 8px; }
-        .plan-box.free h3 { color: #D97706; }
-        .plan-box.premium h3 { color: #607AFB; }
-        .plan-box ul { margin: 4px 0 0 20px; }
-        .plan-box li { font-size: 14px; }
-        .footer {
-            text-align: center;
-            padding: 32px 24px;
-            font-size: 12px;
-            color: #94A3B8;
-        }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        strong { color: #1A1C1A; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
         @media (prefers-color-scheme: dark) {
             body { background: #0F1323; color: #E2E8F0; }
+            h1 { color: #8094FF; }
             h2 { color: #8094FF; }
             p, li { color: #94A3B8; }
-            .plan-box { background: #1E2128; border-color: #334155; }
-            .footer { color: #64748B; }
+            strong { color: #E2E8F0; }
+            .meta { color: #64748B; }
+            hr { border-color: #334155; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Terms of Service</h1>
-        <p>Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
-    </div>
-    <div class="container">
-        <h2>1. Acceptance of Terms</h2>
-        <p>By using the SmartScan application ("App"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the App.</p>
+    <h1>Terms of Service</h1>
+    <p class="meta">Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
 
-        <h2>2. Plans</h2>
-        <div class="plan-box free">
-            <h3>Free Plan</h3>
-            <ul>
-                <li>5 scans per day</li>
-                <li>Ads (App Open + Rewarded)</li>
-                <li>On-device OCR for basic search</li>
-                <li>Local file management</li>
-            </ul>
-        </div>
-        <div class="plan-box premium">
-            <h3>Premium Plan</h3>
-            <ul>
-                <li>Unlimited scans</li>
-                <li>Ad-free experience</li>
-                <li>Google Drive cloud sync</li>
-                <li>Full-text search (FTS)</li>
-                <li>Office document OCR</li>
-            </ul>
-        </div>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By using the SmartScan application ("App"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the App.</p>
 
-        <h2>3. App Description</h2>
-        <p>SmartScan is a document scanning tool that digitizes documents, performs on-device OCR for search, and optionally syncs scans to Google Drive.</p>
+    <h2>2. App Description</h2>
+    <p>SmartScan is a document scanning tool that digitizes documents, performs on-device OCR for search, and optionally syncs scans to Google Drive.</p>
 
-        <h2>4. User Responsibilities</h2>
-        <p><strong>Local Storage:</strong> You are responsible for backups. Uninstalling the App may result in loss of locally stored scans.</p>
-        <p><strong>Account Security:</strong> You are responsible for your Google account security if you enable Drive sync.</p>
+    <h2>3. User Responsibilities</h2>
+    <p><strong>Local Storage:</strong> You are responsible for backups. Uninstalling may result in loss of locally stored scans.</p>
+    <p><strong>Account Security:</strong> You are responsible for your Google account security if you enable Drive sync.</p>
 
-        <h2>5. Google Drive Integration</h2>
-        <ul>
-            <li>Uses DRIVE_FILE scope — app-specific folder only.</li>
-            <li>Optional — disconnect anytime in Settings.</li>
-            <li>Not responsible for data loss on Drive due to third-party actions.</li>
-        </ul>
+    <h2>4. Google Drive Integration</h2>
+    <ul>
+        <li>Uses DRIVE_FILE scope — app-specific folder only.</li>
+        <li>Optional — disconnect anytime in Settings.</li>
+        <li>Not responsible for data loss on Drive due to third-party actions.</li>
+    </ul>
 
-        <h2>6. OCR & Text Search</h2>
-        <ul>
-            <li>On-device OCR — no data transmitted externally.</li>
-            <li>Re-index anytime from Settings.</li>
-        </ul>
+    <h2>5. OCR & Text Search</h2>
+    <ul>
+        <li>On-device OCR — no data transmitted externally.</li>
+        <li>Re-index anytime from Settings.</li>
+    </ul>
 
-        <h2>7. Privacy</h2>
-        <p>Your use of the App is also governed by our <a href="https://calguard.github.io/privacy" style="color:#607AFB;">Privacy Policy</a>.</p>
+    <h2>6. Notifications</h2>
+    <ul>
+        <li>App may send on-device notifications for sync status, tips, and alerts.</li>
+        <li>All preferences configurable in Settings.</li>
+    </ul>
 
-        <h2>8. Disclaimer of Warranties</h2>
-        <p>The App is provided "as is." We do not guarantee bug-free or continuous access.</p>
+    <h2>7. Privacy</h2>
+    <p>Your use of the App is also governed by our <a href="https://calguard.github.io/privacy">Privacy Policy</a>.</p>
 
-        <h2>9. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, SmartScan is not liable for indirect or consequential damages from your use of the App.</p>
+    <h2>8. Disclaimer of Warranties</h2>
+    <p>The App is provided "as is." We do not guarantee bug-free or continuous access.</p>
 
-        <h2>10. Changes to Terms</h2>
-        <p>We may modify these Terms. Continued use constitutes acceptance of the new Terms.</p>
+    <h2>9. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, SmartScan is not liable for indirect or consequential damages from your use of the App.</p>
 
-        <h2>11. Contact</h2>
-        <p><strong>aenage@gmail.com</strong></p>
-    </div>
-    <div class="footer">
-        <p>Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
-    </div>
+    <h2>10. Changes to Terms</h2>
+    <p>We may modify these Terms. Continued use constitutes acceptance of the new Terms.</p>
+
+    <h2>11. Contact</h2>
+    <p><strong>aenage@gmail.com</strong></p>
+
+    <hr>
+    <p class="meta">Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
 </body>
 </html>

@@ -4,169 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy – SmartScan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #F5F6F8;
             color: #1A1C1A;
             line-height: 1.7;
-            padding: 0;
-        }
-        .header {
-            background: linear-gradient(135deg, #607AFB 0%, #4A5FCC 100%);
-            padding: 48px 24px;
-            text-align: center;
-        }
-        .header h1 {
-            color: #fff;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        .header p {
-            color: rgba(255,255,255,0.8);
-            font-size: 14px;
-            margin-top: 8px;
-        }
-        .container {
+            padding: 24px;
             max-width: 700px;
             margin: 0 auto;
-            padding: 32px 24px;
         }
-        h2 {
-            color: #607AFB;
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-        p { margin-bottom: 12px; color: #414942; font-size: 15px; }
-        ul { margin: 8px 0 16px 24px; }
-        li { margin-bottom: 6px; color: #414942; font-size: 15px; }
-        .badge {
-            display: inline-block;
-            background: #E8EDFF;
-            color: #607AFB;
-            font-size: 12px;
-            font-weight: 600;
-            padding: 2px 10px;
-            border-radius: 12px;
-            margin-right: 6px;
-        }
-        .plan-box {
-            background: #fff;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 16px 0;
-            border: 1px solid #E2E8F0;
-        }
-        .plan-box.free { border-left: 4px solid #FFB800; }
-        .plan-box.premium { border-left: 4px solid #607AFB; }
-        .plan-box h3 { font-size: 15px; margin-bottom: 8px; }
-        .plan-box.free h3 { color: #D97706; }
-        .plan-box.premium h3 { color: #607AFB; }
-        .plan-box ul { margin: 4px 0 0 20px; }
-        .plan-box li { font-size: 14px; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        strong { color: #1A1C1A; }
+        a { color: #607AFB; }
         hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
-        .footer {
-            text-align: center;
-            padding: 32px 24px;
-            font-size: 12px;
-            color: #94A3B8;
-        }
         @media (prefers-color-scheme: dark) {
             body { background: #0F1323; color: #E2E8F0; }
+            h1 { color: #8094FF; }
             h2 { color: #8094FF; }
             p, li { color: #94A3B8; }
-            .plan-box { background: #1E2128; border-color: #334155; }
-            .badge { background: rgba(96,122,251,0.15); }
-            .footer { color: #64748B; }
+            strong { color: #E2E8F0; }
+            .meta { color: #64748B; }
             hr { border-color: #334155; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Privacy Policy</h1>
-        <p>Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
-    </div>
-    <div class="container">
-        <h2>Introduction</h2>
-        <p>SmartScan ("we," "our," or "us") is a document scanner app that helps you digitize, organize, and search your documents. This Privacy Policy explains how we collect, use, and share information.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
 
-        <div class="plan-box free">
-            <h3>Free Plan</h3>
-            <ul>
-                <li>5 scans per day</li>
-                <li>Ads (App Open + Rewarded)</li>
-                <li>On-device OCR for search</li>
-                <li>Local file management</li>
-            </ul>
-        </div>
-        <div class="plan-box premium">
-            <h3>Premium Plan</h3>
-            <ul>
-                <li>Unlimited scans</li>
-                <li>Ad-free experience</li>
-                <li>Google Drive cloud sync</li>
-                <li>Full-text search (FTS)</li>
-                <li>Office document OCR</li>
-            </ul>
-        </div>
+    <h2>Introduction</h2>
+    <p>SmartScan ("we," "our," or "us") is a document scanner app that helps you digitize, organize, and search your documents. This Privacy Policy explains how we collect, use, and share information.</p>
 
-        <h2>Information We Collect</h2>
-        <p><strong>Camera & Documents:</strong></p>
-        <ul>
-            <li>SmartScan uses your device camera to scan documents.</li>
-            <li>All scans are processed locally on your device.</li>
-            <li>We do not upload your documents to our servers.</li>
-        </ul>
-        <p><strong>OCR & Text Search:</strong></p>
-        <ul>
-            <li>On-device OCR via ML Kit to extract text from scans.</li>
-            <li>Extracted text stored locally in an encrypted database.</li>
-            <li>You can delete OCR data at any time.</li>
-        </ul>
-        <p><strong>Google Drive Sync (Optional):</strong></p>
-        <ul>
-            <li>Sign in with Google to sync scans to your Drive.</li>
-            <li>Stored in a "SmartScan" folder in your Google Drive.</li>
-            <li>Disconnect at any time from Settings.</li>
-        </ul>
+    <h2>Information We Collect</h2>
+    <p><strong>Camera & Documents:</strong></p>
+    <ul>
+        <li>SmartScan uses your device camera to scan documents.</li>
+        <li>All scans are processed locally on your device.</li>
+        <li>We do not upload your documents to our servers.</li>
+    </ul>
+    <p><strong>OCR & Text Search:</strong></p>
+    <ul>
+        <li>On-device OCR via ML Kit to extract text from scans.</li>
+        <li>Extracted text stored locally in an encrypted database.</li>
+        <li>You can delete OCR data at any time.</li>
+    </ul>
+    <p><strong>Google Drive Sync (Optional):</strong></p>
+    <ul>
+        <li>Sign in with Google to sync scans to your Drive.</li>
+        <li>Stored in a "SmartScan" folder in your Google Drive.</li>
+        <li>Disconnect at any time from Settings.</li>
+    </ul>
 
-        <h2>Advertising (Free Plan)</h2>
-        <ul>
-            <li>Free users see App Open ads on cold start and Rewarded ads for bonus scans.</li>
-            <li>Ads served by Google AdMob — may use Advertising ID for personalization.</li>
-            <li>EEA, UK, and Brazil users receive non-personalized ads by default.</li>
-            <li>Children receive only child-appropriate ads via tagForChildDirectedTreatment.</li>
-            <li>Premium users see no ads.</li>
-        </ul>
+    <h2>Notifications</h2>
+    <p>SmartScan uses on-device notifications for sync alerts, waiting-for-WiFi reminders, and app tips. Notifications are optional and can be disabled in Settings. No personal data is transmitted for notification purposes.</p>
 
-        <h2>Children's Privacy</h2>
-        <ul>
-            <li>We comply with COPPA. We do not knowingly collect data from children under 13.</li>
-            <li>Child-directed ads served via tagForChildDirectedTreatment.</li>
-            <li>No personalized ads for children.</li>
-        </ul>
+    <h2>How We Use Information</h2>
+    <p>We use your information only to provide the app (process, display, and search scanned documents) and to sync to Google Drive when enabled. We do not collect usage data or analytics.</p>
 
-        <h2>Data Sharing</h2>
-        <p>We do NOT share your personal information with third parties. All data is stored locally on your device or your own Google Drive.</p>
+    <h2>Data Sharing</h2>
+    <p>We do NOT share your personal information with third parties. All data is stored locally or on your own Google Drive.</p>
 
-        <h2>Your Rights</h2>
-        <ul>
-            <li>Access, delete, or export your data anytime.</li>
-            <li>Disconnect Google Drive or disable notifications in Settings.</li>
-        </ul>
+    <h2>Your Rights</h2>
+    <ul>
+        <li>Access your data at any time.</li>
+        <li>Delete your data (local files, OCR index, or Google Drive files).</li>
+        <li>Disconnect Google Drive sync in Settings.</li>
+        <li>Disable notifications at any time.</li>
+    </ul>
 
-        <h2>Contact</h2>
-        <p>For questions: <strong>aenage@gmail.com</strong></p>
-    </div>
-    <div class="footer">
-        <p>Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
-    </div>
+    <h2>Contact</h2>
+    <p>For questions: <strong>aenage@gmail.com</strong></p>
+
+    <hr>
+    <p class="meta">Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
 </body>
 </html>
