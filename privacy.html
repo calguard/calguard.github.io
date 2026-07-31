@@ -87,8 +87,7 @@
     <script>
         if (location.search.includes('app=1')) {
             document.querySelector('h1').style.display = 'none'
-            document.querySelector('.meta').style.display = 'none'
-            document.querySelector('hr')?.style.display = 'none'
+            document.querySelector('.meta:first-of-type').style.display = 'none'
         }
     </script>
 </body>
