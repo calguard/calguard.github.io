@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Account Deletion – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Request Account Deletion</h1>
+
+    <p>SmartScan is a document scanning and OCR application by AEnage Dev that helps you scan, organize, search, and back up your documents.</p>
+    <p>This page explains how to delete your SmartScan account and the data associated with it.</p>
+
+    <h2>1. Does SmartScan Create an Account?</h2>
+    <p>SmartScan does not create its own user account and does not run a server that stores account data.</p>
+    <p>SmartScan offers an optional Google Sign-In using your existing Google account. Google Sign-In is used only to provide Google Drive Backup and related Google features.</p>
+    <p>Deleting your "account" with SmartScan means removing your Google account connection to SmartScan and deleting the information SmartScan keeps locally on your device.</p>
+
+    <h2>2. Delete Your Account – Step by Step</h2>
+    <p>To delete your SmartScan account and associated data, follow these steps:</p>
+    <ul>
+        <li>Open SmartScan and go to Settings.</li>
+        <li>Sign out of your Google account from within SmartScan.</li>
+        <li>Open your Google Account, go to Security, and manage third-party access to remove SmartScan from the list of apps connected to your Google account.</li>
+        <li>To delete SmartScan's locally stored information, clear the app's data or uninstall SmartScan from your device.</li>
+    </ul>
+
+    <h2>3. What Is Deleted and What Is Kept?</h2>
+    <p>When you delete your account using the steps above:</p>
+    <ul>
+        <li>SmartScan's connection to your Google account is removed.</li>
+        <li>Locally stored sign-in information, such as your name, email address, and profile picture, is deleted when you sign out, clear the app's data, or uninstall the app.</li>
+        <li>App preferences and locally stored documents are deleted when you clear the app's data or uninstall the app.</li>
+        <li>Documents you previously backed up to your own Google Drive are not deleted automatically. Because those files live in your Google account, not in SmartScan, they remain until you delete them through Google Drive.</li>
+    </ul>
+
+    <h2>4. Request Deletion by Contacting Us</h2>
+    <p>If you are unable to delete your account using the steps above, or if you have any other deletion request, contact us at: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> and include the Google account you used with SmartScan.</p>
+
+    <h2>5. Data Retention</h2>
+    <p>SmartScan does not maintain its own server or cloud database containing your account information.</p>
+    <p>Information processed by third-party services such as Google Sign-In, Google Drive, Google AdMob, analytics/crash-reporting services, and Google Play is subject to those services' respective retention policies.</p>
+
+    <h2>6. Contact</h2>
+    <p>If you have questions about deleting your account or about this page, please contact:</p>
+    <p>Email: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Developer: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Last updated: July 2026 &nbsp;|&nbsp; SmartScan Version 1.0.0</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>
