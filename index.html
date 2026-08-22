@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmartScan</title>
-  <style>
-    body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; color: #1a1c1a; }
-    h1 { color: #607AFB; }
-    a { color: #607AFB; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartScan — Scan, OCR & Back Up</title>
+    <meta name="description" content="SmartScan turns paper into clean PDFs, OCRs every word, and backs up to your Google Drive. Free 5 scans/day, Premium for unlimited.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SmartScan",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "BusinessApplication",
+      "offers": [
+        { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Premium (one-time)", "priceCurrency": "USD", "url": "https://play.google.com/store/apps/details?id=com.aenage.smartscan" }
+      ]
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; padding: 24px; max-width: 760px; margin: 0 auto; background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+        h2 { color: #607AFB; font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 10px; }
+        p { margin-bottom: 12px; color: #414942; font-size: 16px; }
+        .tagline { font-size: 18px; color: #475569; margin-bottom: 6px; }
+        .cta { display: inline-block; background: #607AFB; color: #fff; text-decoration: none; padding: 14px 24px; border-radius: 12px; font-weight: 700; font-size: 16px; margin: 10px 0 24px; }
+        .cta:hover { background: #4f63d6; }
+        .cards { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 16px 0; }
+        .card { background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; }
+        .card h3 { color: #1A1C1A; font-size: 17px; margin-bottom: 6px; }
+        .card p { font-size: 15px; margin: 0; }
+        footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid #E2E8F0; font-size: 13px; color: #94A3B8; }
+        footer a { color: #607AFB; }
+        @media (min-width: 640px) { .cards { grid-template-columns: 1fr 1fr; } }
+        @media (prefers-color-scheme: dark) {
+            body { background: #0F1323; color: #E2E8F0; }
+            h1, h2 { color: #8094FF; }
+            p { color: #94A3B8; }
+            .card { background: #1A1E2E; border-color: #2A2F45; }
+            .card p { color: #94A3B8; }
+            .card h3 { color: #E2E8F0; }
+            footer { border-color: #2A2F45; }
+            footer a { color: #8094FF; }
+        }
+    </style>
 </head>
 <body>
-  <h1>SmartScan</h1>
-  <p>Document scanner with OCR and Google Drive backup.</p>
-  <ul>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms of Service</a></li>
-    <li><a href="delete-data.html">Request Data Deletion</a></li>
-    <li><a href="delete-account.html">Request Account Deletion</a></li>
-  </ul>
+    <h1>SmartScan</h1>
+    <p class="tagline">Turn paper into clean PDFs in seconds.</p>
+    <p>Scan, OCR, and back up — free to start.</p>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.aenage.smartscan">Get it on Google Play</a>
+
+    <h2>What SmartScan does</h2>
+    <div class="cards">
+        <div class="card"><h3>Scan to clean PDF</h3><p>Snap any paper, receipt, or whiteboard and get a tidy PDF in seconds.</p></div>
+        <div class="card"><h3>OCR — search &amp; copy</h3><p>Every word inside your scans becomes searchable and copyable.</p></div>
+        <div class="card"><h3>Private Drive backup</h3><p>Back up every file to your own Google Drive, in a private SmartScan folder.</p></div>
+        <div class="card"><h3>Free, then Premium</h3><p>5 free scans a day. One-time Premium for unlimited scans, no watermarks, no ads.</p></div>
+    </div>
+
+    <h2>FAQ</h2>
+    <p><strong>How many scans are free?</strong> 5 per day on the free plan. Premium removes the limit.</p>
+    <p><strong>What is Premium?</strong> A one-time purchase: unlimited scans, full-text search, Drive backup, and Office-file OCR.</p>
+    <p><strong>Is my data safe?</strong> OCR runs on your device. Backups go only to your own Google Drive. See the <a href="/privacy">Privacy Policy</a>.</p>
+    <p><strong>Which files are supported?</strong> PDF, images (JPG/PNG/HEIC/…), and Office files (Word, Excel, PowerPoint).</p>
+
+    <footer>
+        <p>SmartScan by AEnage Dev. <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/delete-data">Delete data</a> · <a href="/delete-account">Delete account</a></p>
+    </footer>
 </body>
 </html>
