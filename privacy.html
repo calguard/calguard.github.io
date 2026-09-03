@@ -64,9 +64,9 @@
     <p>If you choose to import an existing photo from your device's gallery to use as a scan page, SmartScan reads and processes only the photo you select, just like a new scan, and it is never used for anything else.</p>
 
     <h2>3. OCR and Text Recognition</h2>
-    <p>SmartScan uses OCR (Optical Character Recognition) to recognize text in scanned documents, including multiple languages and scripts (such as Latin, Chinese, Japanese, Korean, and Hindi) when you choose them. Language detection for Auto mode is also performed on your device.</p>
-    <p>OCR processing is performed on your device using on-device models.</p>
-    <p>The OCR text generated from your documents is stored locally on your device and is not sent to a SmartScan-operated server.</p>
+    <p>SmartScan uses OCR (Optical Character Recognition) to recognize text in scanned documents, including multiple languages and scripts (such as Latin, Chinese, Japanese, Korean, and Devanagari) when you choose them. Language detection for Auto mode is also performed on your device. These features are provided using Google ML Kit libraries, including Text Recognition and Document Scanner, which run on your device.</p>
+    <p>When you use scanning and OCR features, processing of your images and text happens fully on your device. ML Kit does not send your document images, OCR text, or recognition results to Google servers, and the OCR text generated from your documents is stored locally on your device and is not sent to a SmartScan-operated server.</p>
+    <p>From time to time, ML Kit may contact Google servers to receive bug fixes, updated models, and hardware accelerator compatibility information. ML Kit also sends anonymized performance and utilization metrics about the ML Kit APIs in the app to Google. Google uses this metrics data to measure performance, debug, maintain, and improve the ML Kit APIs and detect misuse or abuse, as described in Google's Privacy Policy.</p>
     <p>OCR technology may occasionally produce incorrect results. You should verify important information against the original document before relying on OCR results.</p>
 
     <h2>4. Google Sign-In</h2>
@@ -195,10 +195,12 @@
     <ul>
         <li>Google Sign-In</li>
         <li>Google Drive</li>
+        <li>Google ML Kit (on-device Text Recognition and Document Scanner, including language models for Latin, Chinese, Japanese, Korean, and Devanagari)</li>
         <li>Google AdMob</li>
         <li>Google Analytics and/or crash-reporting services</li>
         <li>Google Play Billing</li>
     </ul>
+    <p>ML Kit processing is performed on your device. Google's processing of ML Kit metrics data is described in Section 3 and in Google's Privacy Policy.</p>
     <p>These services are provided and controlled by Google and may process information according to their own privacy policies and terms.</p>
     <p>SmartScan does not control the privacy practices of these third-party services.</p>
 
