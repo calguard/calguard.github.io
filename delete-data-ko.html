@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 삭제 요청 – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>데이터 삭제 요청</h1>
+
+    <p>SmartScan은 문서를 스캔·정리·검색·백업할 수 있게 돕는 문서 스캔 및 OCR 앱입니다.</p>
+    <p>이 페이지는 SmartScan 데이터를 삭제하는 방법을 설명합니다. SmartScan은 문서를 당신의 기기에 저장하고, Google 드라이브 백업을 선택한 경우에만 자신의 Google 드라이브 계정에 저장합니다. SmartScan은 문서를 위한 자체 클라우드 저장소나 백엔드 서버를 운영하지 않습니다.</p>
+
+    <p class="meta">이 문서는 영문 페이지의 번역본이며 편의를 위해 제공합니다. 내용이 다를 경우 영문본이 우선합니다.</p>
+
+    <h2>1. SmartScan은 어떤 데이터를 저장하나요?</h2>
+    <p>대부분의 SmartScan 데이터는 당신의 것이며 다음 둘 중 한 곳에 있습니다:</p>
+    <ul>
+        <li>기기: 스캔한 문서 이미지·OCR 텍스트·검색 색인·앱 설정·로컬 저장 로그인 정보.</li>
+        <li>Google 드라이브: Google 드라이브 백업을 사용하면 백업하기로 선택한 문서가 자신의 Google 드라이브 계정에 저장됩니다.</li>
+    </ul>
+    <p>SmartScan은 문서나 OCR 텍스트를 저장하는 서버를 운영하지 않습니다.</p>
+
+    <h2>2. 기기에 저장된 문서 삭제</h2>
+    <p>기기에서 문서와 그 OCR 텍스트를 삭제하려면:</p>
+    <ul>
+        <li>SmartScan을 열고 파일 탭으로 이동합니다.</li>
+        <li>삭제할 문서 하나 이상을 선택합니다.</li>
+        <li>삭제 옵션을 사용해 제거합니다.</li>
+    </ul>
+    <p>기기의 모든 SmartScan 데이터를 한 번에 삭제하려면 다음 방법도 있습니다:</p>
+    <ul>
+        <li>Android 기기의 설정을 열고 앱에서 SmartScan을 선택한 뒤 저장공간 삭제 또는 데이터 삭제를 선택하거나,</li>
+        <li>SmartScan을 삭제합니다.</li>
+    </ul>
+    <p>앱 데이터를 지우거나 앱을 삭제하면 로컬 저장 문서·OCR 텍스트·로그인 정보·앱 설정이 기기에서 삭제됩니다.</p>
+
+    <h2>3. Google 드라이브에 백업된 문서 삭제</h2>
+    <p>Google 드라이브 백업을 사용했다면 백업된 문서는 자신의 Google 드라이브 계정에 저장됩니다. 기기에서 SmartScan을 삭제해도 이 파일들은 삭제되지 않습니다.</p>
+    <p>백업된 문서를 삭제하려면:</p>
+    <ul>
+        <li>Google 드라이브에서 SmartScan 백업 폴더를 열거나,</li>
+        <li>SmartScan을 열고 클라우드 탭에서 파일을 삭제합니다.</li>
+    </ul>
+    <p>이 파일들은 Google 드라이브 계정에 있으므로 Google 드라이브를 통해 관리하거나 완전히 삭제할 수 있습니다.</p>
+
+    <h2>4. Google 계정에 대한 SmartScan 접근 삭제</h2>
+    <p>SmartScan의 Google 계정 접근을 중단하려면:</p>
+    <ul>
+        <li>SmartScan을 열고 설정에서 로그아웃하거나,</li>
+        <li>Google 계정을 열고 보안에서 제3자 접근을 관리해 SmartScan을 삭제합니다.</li>
+    </ul>
+
+    <h2>5. 추가 삭제 요청</h2>
+    <p>SmartScan은 자체 클라우드 서버를 운영하지 않으므로 SmartScan 운영 서버에 삭제할 문서나 개인 데이터가 없습니다.</p>
+    <p>위 단계로 해결되지 않는 삭제 요청이 있으면 연락해 주세요: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span>. 요청 내용과 SmartScan과 함께 사용한 Google 계정(있는 경우)을 적어 주세요.</p>
+
+    <h2>6. 삭제되는 항목과 남는 항목</h2>
+    <p>위 단계로 데이터를 삭제하면:</p>
+    <ul>
+        <li>기기에 저장된 문서·이미지·OCR 텍스트가 삭제됩니다.</li>
+        <li>로컬 저장 로그인 정보(이름·이메일 주소 등)가 삭제됩니다.</li>
+        <li>앱 설정과 검색 색인이 삭제됩니다.</li>
+        <li>자신의 Google 드라이브에 백업된 문서는 자동으로 삭제되지 않습니다. SmartScan이 아닌 당신의 계정에 있으므로 삭제할 때까지 Google 드라이브에 남습니다.</li>
+    </ul>
+
+    <h2>7. 데이터 보관</h2>
+    <p>SmartScan은 스캔 문서를 담은 자체 클라우드 데이터베이스를 유지하지 않습니다.</p>
+    <p>로컬 저장 문서는 삭제·앱 데이터 삭제·앱 삭제까지 기기에 남습니다.</p>
+    <p>Google 드라이브에 백업된 문서는 삭제되거나 Google 드라이브 설정에 따라 제거될 때까지 남습니다.</p>
+    <p>Google 로그인·Google 드라이브·Google AdMob·분석/충돌 보고 서비스·Google Play 등 제3자 서비스가 처리하는 정보에는 각 서비스의 보관 정책이 적용됩니다.</p>
+
+    <h2>8. 문의</h2>
+    <p>데이터 삭제나 이 페이지에 대해 질문이 있으면 연락해 주세요:</p>
+    <p>이메일: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>개발자: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">마지막 업데이트: 2026년 7월 &nbsp;|&nbsp; SmartScan 버전 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

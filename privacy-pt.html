@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Política de Privacidade</h1>
+
+    <p>O SmartScan é um aplicativo de digitalização de documentos e OCR que ajuda você a digitalizar, organizar, pesquisar e fazer backup dos seus documentos.</p>
+
+    <p>Esta Política de Privacidade explica quais informações o SmartScan acessa, como elas são usadas, onde suas informações ficam armazenadas e quais escolhas você tem.</p>
+
+    <p>Escrevemos esta política em linguagem simples para que seja fácil de entender.</p>
+
+    <p class="meta">Esta é uma tradução da Política de Privacidade em inglês, fornecida para sua comodidade. Em caso de divergência, prevalece a versão em inglês.</p>
+
+    <h2>1. Seus documentos</h2>
+    <p>Seus documentos digitalizados ficam armazenados no seu dispositivo.</p>
+    <p>O SmartScan não opera armazenamento em nuvem próprio nem servidor para guardar seus documentos.</p>
+    <p>As imagens dos seus documentos e o texto OCR permanecem no seu dispositivo, a menos que você escolha usar o Backup do Google Drive.</p>
+    <p>Se você ativar o Backup do Google Drive, o SmartScan usa sua conta Google e o Google Drive para fazer backup dos documentos selecionados na sua própria conta do Google Drive.</p>
+
+    <h2>2. Câmera</h2>
+    <p>O SmartScan usa a câmera do seu dispositivo quando você escolhe digitalizar um documento.</p>
+    <p>A câmera é usada para capturar imagens de documentos para digitalização e processamento.</p>
+    <p>O SmartScan não grava nem monitora sua câmera continuamente.</p>
+    <p>O acesso à câmera só é usado quando necessário para a digitalização.</p>
+    <p>Se você escolher importar uma foto existente da galeria do seu dispositivo para usar como página digitalizada, o SmartScan lê e processa apenas a foto selecionada, como uma nova digitalização, e nunca a usa para mais nada.</p>
+
+    <h2>3. OCR e reconhecimento de texto</h2>
+    <p>O SmartScan usa OCR (reconhecimento óptico de caracteres) para reconhecer o texto em documentos digitalizados, incluindo vários idiomas e escritas (como latim, chinês, japonês, coreano e devanágari) quando você os escolhe. A detecção de idioma do modo automático também é feita no seu dispositivo. Esses recursos são fornecidos com as bibliotecas do Google ML Kit, incluindo reconhecimento de texto e scanner de documentos, executados no seu dispositivo.</p>
+    <p>Quando você usa os recursos de digitalização e OCR, o processamento das suas imagens e textos acontece totalmente no seu dispositivo. O ML Kit não envia as imagens dos seus documentos, o texto OCR nem os resultados do reconhecimento aos servidores do Google, e o texto OCR gerado a partir dos seus documentos fica armazenado localmente no seu dispositivo, sem ser enviado a um servidor operado pelo SmartScan.</p>
+    <p>De tempos em tempos, o ML Kit pode contatar os servidores do Google para receber correções de bugs, modelos atualizados e informações de compatibilidade do acelerador de hardware. O ML Kit também envia ao Google métricas anônimas de desempenho e uso sobre as APIs do ML Kit no app. O Google usa esses dados de métricas para medir o desempenho, depurar, manter e melhorar as APIs do ML Kit e detectar uso indevido, como descrito na Política de Privacidade do Google.</p>
+    <p>A tecnologia OCR pode ocasionalmente produzir resultados incorretos. Verifique informações importantes no documento original antes de confiar nos resultados do OCR.</p>
+
+    <h2>4. Login do Google</h2>
+    <p>O login do Google é usado para conectar sua conta Google ao SmartScan quando você escolhe usar o Backup do Google Drive.</p>
+    <p>Ao fazer login com o Google, o Google pode fornecer ao SmartScan informações básicas da conta associadas à sua conta Google, como seu nome, e-mail, informações do perfil e identificador da conta, dependendo das permissões solicitadas e concedidas.</p>
+    <p>Essas informações são usadas para autenticar sua conta Google e fornecer o Backup do Google Drive.</p>
+    <p>O SmartScan não pede sua senha do Google.</p>
+    <p>O Google gerencia a autenticação por meio de seus próprios serviços e processa informações de acordo com suas políticas de privacidade e termos aplicáveis.</p>
+
+    <h2>5. Backup do Google Drive</h2>
+    <p>O Backup do Google Drive é um recurso opcional.</p>
+    <p>Ao escolher usá-lo, o SmartScan solicita permissão para acessar o Google Drive a fim de fazer backup ou gerenciar arquivos associados ao SmartScan.</p>
+    <p>Seus documentos selecionados recebem backup na sua própria conta do Google Drive.</p>
+    <p>O SmartScan não opera um serviço separado de armazenamento em nuvem para seus documentos.</p>
+    <p>Os arquivos armazenados via Google Drive permanecem na sua conta Google e estão sujeitos às políticas de privacidade, segurança e serviço do Google.</p>
+    <p>Você pode parar de usar o Backup do Google Drive ou remover o acesso do SmartScan à sua conta Google pelos controles disponíveis no SmartScan ou na sua Conta Google.</p>
+
+    <h2>6. Informações que recebemos pelos serviços do Google</h2>
+    <p>O SmartScan pode receber informações limitadas necessárias para fornecer recursos relacionados ao Google.</p>
+    <p>Dependendo do recurso usado, isso pode incluir:</p>
+    <ul>
+        <li>Informações da conta Google necessárias para o login.</li>
+        <li>Informações necessárias para identificar sua conta do Google Drive.</li>
+        <li>Informações sobre arquivos e pastas de backup do SmartScan necessárias para realizar o Backup do Google Drive.</li>
+        <li>Informações necessárias para processar compras do Google Play.</li>
+    </ul>
+    <p>O SmartScan não usa seus documentos do Google Drive nem seu conteúdo para publicidade.</p>
+
+    <h2>7. Publicidade</h2>
+    <p>A versão gratuita do SmartScan pode exibir anúncios fornecidos pelo Google AdMob.</p>
+    <p>O SmartScan não usa o conteúdo dos seus documentos digitalizados nem o texto OCR para selecionar anúncios.</p>
+    <p>Informações relacionadas à publicidade podem ser processadas pelo Google e seus parceiros de publicidade de acordo com suas políticas aplicáveis.</p>
+    <p>O SmartScan segue os requisitos aplicáveis do Google Play para publicidade com base no público-alvo declarado do app.</p>
+    <p>O Premium pode remover anúncios, dependendo dos recursos Premium oferecidos no app.</p>
+
+    <h2>8. Análise e relatórios de falhas</h2>
+    <p>O SmartScan pode usar serviços de análise e relatórios de falhas do Google para nos ajudar a entender como o aplicativo é usado, identificar falhas, diagnosticar problemas técnicos e melhorar o aplicativo.</p>
+    <p>Esses serviços podem processar informações técnicas como:</p>
+    <ul>
+        <li>Informações do dispositivo e do sistema operacional.</li>
+        <li>Versão do aplicativo.</li>
+        <li>Informações de falhas.</li>
+        <li>Informações de desempenho.</li>
+        <li>Informações gerais de uso do app.</li>
+    </ul>
+    <p>O SmartScan não usa esses serviços para enviar ou analisar o conteúdo dos seus documentos digitalizados nem o texto OCR.</p>
+    <p>As informações processadas por esses serviços estão sujeitas às políticas aplicáveis do provedor do serviço.</p>
+
+    <h2>9. Cobrança do Google Play</h2>
+    <p>Se o SmartScan oferecer recursos Premium pagos, os pagamentos são processados pelo Google Play.</p>
+    <p>O SmartScan não recebe nem armazena seu cartão de crédito, débito, conta bancária ou outras informações de cartão de pagamento.</p>
+    <p>O Google Play gerencia o processamento de pagamentos e os procedimentos aplicáveis de compra e reembolso.</p>
+
+    <h2>10. Notificações</h2>
+    <p>O SmartScan pode usar notificações para recursos como:</p>
+    <ul>
+        <li>Status do backup.</li>
+        <li>Lembretes de backup.</li>
+        <li>Atualizações do aplicativo.</li>
+        <li>Outras informações relacionadas ao app.</li>
+    </ul>
+    <p>Você pode controlar as permissões de notificação nas configurações do seu dispositivo Android e, quando disponível, nas configurações do SmartScan.</p>
+
+    <h2>11. O que o SmartScan não faz</h2>
+    <p>O SmartScan não:</p>
+    <ul>
+        <li>Vende suas informações pessoais.</li>
+        <li>Aluga suas informações pessoais.</li>
+        <li>Usa seus documentos digitalizados para publicidade.</li>
+        <li>Usa seu texto OCR para publicidade.</li>
+        <li>Envia seus documentos para um servidor em nuvem operado pelo SmartScan.</li>
+        <li>Armazena seus documentos em um banco de dados em nuvem operado pelo SmartScan.</li>
+        <li>Compartilha seus documentos digitalizados com anunciantes.</li>
+    </ul>
+    <p>Se você escolher o Backup do Google Drive, seus documentos selecionados são enviados ao Google Drive porque você solicitou o backup.</p>
+
+    <h2>12. Onde seus documentos ficam armazenados</h2>
+    <p>Seus documentos podem estar em dois lugares:</p>
+    <p>No seu dispositivo: suas digitalizações originais e informações OCR ficam armazenadas localmente pelo SmartScan.</p>
+    <p>No seu Google Drive: se você ativar o Backup do Google Drive, os documentos selecionados também podem ficar na sua própria conta do Google Drive.</p>
+    <p>O SmartScan não cria uma cópia separada em nuvem dos seus documentos fora dos serviços do Google usados pelo app.</p>
+
+    <h2>13. Suas escolhas</h2>
+    <p>Você pode escolher:</p>
+    <ul>
+        <li>Usar o login do Google.</li>
+        <li>Usar o Backup do Google Drive.</li>
+        <li>Armazenar documentos apenas no seu dispositivo.</li>
+        <li>Ativar ou desativar notificações.</li>
+        <li>Comprar o Premium.</li>
+        <li>Excluir documentos do SmartScan.</li>
+        <li>Excluir documentos com backup do seu Google Drive.</li>
+        <li>Remover o acesso do SmartScan à sua conta Google.</li>
+    </ul>
+    <p>Você controla sua conta do Google Drive e pode gerenciar seus arquivos pelo Google.</p>
+
+    <h2>14. Exclusão de dados</h2>
+    <p>O SmartScan foi projetado para manter os dados de documentos no seu dispositivo ou no seu próprio Google Drive quando você escolhe usar backup.</p>
+    <p>Você pode excluir documentos armazenados localmente com os controles disponíveis do SmartScan.</p>
+    <p>Documentos com backup no Google Drive podem ser excluídos do seu Google Drive.</p>
+    <p>Se o SmartScan fornecer uma conta ou recurso relacionado à conta, você pode solicitar a exclusão das informações de conta associadas a esse recurso pela opção de exclusão de conta do app ou pelo método externo de exclusão de conta fornecido pelo desenvolvedor.</p>
+    <p>Excluir o SmartScan do seu dispositivo não exclui automaticamente arquivos dos quais você fez backup antes no Google Drive. Gerencie esses arquivos pelo Google Drive.</p>
+
+    <h2>15. Retenção de dados</h2>
+    <p>O SmartScan não mantém seu próprio banco de dados em nuvem com seus documentos digitalizados.</p>
+    <p>Documentos armazenados localmente permanecem no seu dispositivo até você excluí-los, limpar os dados do aplicativo, desinstalar o aplicativo ou removê-los de outra forma.</p>
+    <p>Documentos com backup no Google Drive permanecem no seu Google Drive até você excluí-los ou até serem removidos conforme suas configurações do Google Drive.</p>
+    <p>Informações processadas por serviços de terceiros como login do Google, Google Drive, Google AdMob, serviços de análise/relatórios de falhas e Google Play estão sujeitas às respectivas políticas de retenção desses serviços.</p>
+
+    <h2>16. Segurança</h2>
+    <p>O SmartScan foi projetado para minimizar a coleta desnecessária das suas informações.</p>
+    <p>Seus documentos e texto OCR são processados e armazenados principalmente no seu dispositivo.</p>
+    <p>Ao usar o Backup do Google Drive, seus arquivos são transmitidos ao Google Drive pelos serviços do Google.</p>
+    <p>Você é responsável por proteger o acesso ao seu dispositivo e conta Google, incluindo usar segurança adequada do dispositivo e manter seguras suas credenciais do Google.</p>
+    <p>Nenhum método de armazenamento ou transmissão eletrônica pode ser garantido como totalmente seguro.</p>
+
+    <h2>17. Usuários com 13 anos ou mais</h2>
+    <p>O SmartScan é destinado a usuários com 13 anos ou mais.</p>
+    <p>O SmartScan não é destinado a crianças menores de 13 anos.</p>
+    <p>Se você tem menos de 13 anos, não use o SmartScan.</p>
+    <p>O público-alvo do app está declarado na seção de público-alvo e conteúdo do Google Play. O Google Play pode aplicar requisitos adicionais dependendo do público declarado e das políticas aplicáveis.</p>
+
+    <h2>18. Serviços de terceiros</h2>
+    <p>O SmartScan usa serviços do Google para fornecer certos recursos.</p>
+    <p>Podem incluir:</p>
+    <ul>
+        <li>Login do Google</li>
+        <li>Google Drive</li>
+        <li>Google ML Kit (reconhecimento de texto e scanner de documentos no dispositivo, incluindo modelos de idioma para latim, chinês, japonês, coreano e devanágari)</li>
+        <li>Google AdMob</li>
+        <li>Google Analytics e/ou serviços de relatórios de falhas</li>
+        <li>Cobrança do Google Play</li>
+    </ul>
+    <p>O processamento do ML Kit é feito no seu dispositivo. O processamento pelo Google dos dados de métricas do ML Kit está descrito na Seção 3 e na Política de Privacidade do Google.</p>
+    <p>Esses serviços são fornecidos e controlados pelo Google e podem processar informações de acordo com suas próprias políticas de privacidade e termos.</p>
+    <p>O SmartScan não controla as práticas de privacidade desses serviços de terceiros.</p>
+
+    <h2>19. Alterações a esta Política de Privacidade</h2>
+    <p>Podemos atualizar esta Política de Privacidade quando os recursos, serviços ou práticas de privacidade do SmartScan mudarem.</p>
+    <p>Quando fizermos alterações importantes, atualizaremos a data de "Última atualização" no fim desta política e, quando apropriado, daremos aviso adicional pelo aplicativo.</p>
+
+    <h2>20. Contato</h2>
+    <p>Se tiver dúvidas, preocupações ou solicitações sobre esta Política de Privacidade ou as práticas de privacidade do SmartScan, entre em contato:</p>
+    <p>E-mail: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Desenvolvedor: AEnage Dev</p>
+    <p>Ao usar o SmartScan, você reconhece que leu e entendeu esta Política de Privacidade.</p>
+
+    <hr>
+    <p class="meta">Última atualização: setembro de 2026 &nbsp;|&nbsp; SmartScan versão 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

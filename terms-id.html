@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat Layanan – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Syarat Layanan</h1>
+
+    <p>Selamat datang di SmartScan.</p>
+    <p>Syarat Layanan ini menjelaskan aturan dan ketentuan penggunaan SmartScan.</p>
+    <p>Dengan menginstal atau menggunakan SmartScan, Anda menyetujui Syarat ini. Jika Anda tidak menyetujui Syarat ini, jangan gunakan aplikasi.</p>
+
+    <p class="meta">Ini adalah terjemahan dari Syarat Layanan berbahasa Inggris, disediakan untuk kenyamanan Anda. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</p>
+
+    <h2>1. Tentang SmartScan</h2>
+    <p>SmartScan adalah aplikasi pemindai dokumen dan OCR.</p>
+    <p>Tergantung fitur yang tersedia di versi aplikasi Anda, SmartScan memungkinkan Anda untuk:</p>
+    <ul>
+        <li>Memindai dokumen menggunakan kamera perangkat Anda.</li>
+        <li>Memproses dokumen menggunakan OCR.</li>
+        <li>Mengekstrak dan mencari teks dari dokumen pindaian.</li>
+        <li>Menyimpan dokumen di perangkat Anda.</li>
+        <li>Mencadangkan dokumen pilihan ke akun Google Drive Anda sendiri.</li>
+        <li>Menggunakan Login Google.</li>
+        <li>Membeli SmartScan Premium melalui Google Play.</li>
+    </ul>
+
+    <h2>2. Dokumen Anda</h2>
+    <p>Anda tetap memiliki dokumen, gambar, dan teks yang Anda proses menggunakan SmartScan.</p>
+    <p>SmartScan tidak mengklaim kepemilikan atas dokumen pribadi Anda.</p>
+    <p>Anda bertanggung jawab memastikan bahwa Anda memiliki hak hukum atau izin untuk memindai, menyalin, menyimpan, memproses, atau mencadangkan dokumen apa pun yang Anda gunakan dengan SmartScan.</p>
+    <p>Anda tidak boleh menggunakan SmartScan untuk mengakses, menyalin, mendistribusikan, atau memproses dokumen dengan cara yang melanggar privasi, hak cipta, kerahasiaan, atau hak hukum lain milik orang lain.</p>
+
+    <h2>3. Penyimpanan Lokal</h2>
+    <p>SmartScan dirancang untuk menyimpan dokumen dan informasi OCR Anda di perangkat Anda.</p>
+    <p>Anda bertanggung jawab melindungi perangkat Anda dan menyimpan cadangan dokumen penting.</p>
+    <p>Jika perangkat Anda hilang, rusak, disetel ulang, atau diganti, atau jika SmartScan dicopot pemasangannya atau data aplikasinya dihapus, dokumen yang tersimpan secara lokal dapat hilang permanen.</p>
+
+    <h2>4. Cadangan Google Drive</h2>
+    <p>Cadangan Google Drive adalah fitur opsional.</p>
+    <p>Jika Anda mengaktifkannya, SmartScan menggunakan Login Google dan Google Drive untuk mencadangkan dokumen pilihan ke akun Google Drive Anda sendiri.</p>
+    <p>SmartScan tidak mengoperasikan layanan penyimpanan cloud sendiri untuk dokumen Anda.</p>
+    <p>Anda bertanggung jawab atas akun Google Anda dan mengelola file yang tersimpan di Google Drive Anda.</p>
+    <p>Pastikan akun Google Anda diamankan dengan benar.</p>
+    <p>Syarat dan kebijakan Google yang berlaku juga berlaku saat Anda menggunakan Google Drive.</p>
+
+    <h2>5. Akses Akun Google</h2>
+    <p>SmartScan mungkin mengharuskan Anda login dengan Google untuk menggunakan Cadangan Google Drive.</p>
+    <p>Saat Anda menggunakan Cadangan Google Drive, Anda mengotorisasi SmartScan untuk mengakses layanan Google dan informasi Google Drive yang diperlukan untuk menyediakan fitur cadangan yang Anda pilih.</p>
+    <p>Anda dapat mencabut akses SmartScan melalui pengaturan Akun Google Anda.</p>
+    <p>Jika Anda mencabut akses, Cadangan Google Drive mungkin tidak berfungsi hingga Anda mengotorisasi akses lagi.</p>
+
+    <h2>6. OCR</h2>
+    <p>SmartScan menggunakan teknologi OCR untuk mengenali teks dari dokumen pindaian, termasuk berbagai bahasa dan aksara (seperti Latin, Mandarin, Jepang, Korea, dan Devanagari) saat Anda memilihnya. Deteksi bahasa untuk mode Otomatis dan pengenalan teks dilakukan di perangkat Anda.</p>
+    <p>Hasil OCR dibuat secara otomatis dan dapat mengandung kesalahan.</p>
+    <p>SmartScan tidak menjamin bahwa hasil OCR akan sepenuhnya akurat, lengkap, atau andal.</p>
+    <p>Verifikasikan informasi penting terhadap dokumen asli sebelum mengandalkan hasil OCR.</p>
+
+    <h2>7. Kamera dan Pemindaian</h2>
+    <p>SmartScan menggunakan kamera perangkat Anda saat Anda memilih memindai dokumen.</p>
+    <p>Anda bertanggung jawab memastikan bahwa Anda memiliki izin untuk memotret, memindai, menyalin, atau memproses dokumen yang Anda gunakan dengan SmartScan, termasuk foto apa pun yang Anda impor dari galeri perangkat untuk digunakan sebagai halaman pindaian.</p>
+    <p>SmartScan tidak memberi Anda hak apa pun atas dokumen atau materi milik orang atau organisasi lain.</p>
+
+    <h2>8. Periklanan</h2>
+    <p>Versi gratis SmartScan dapat menampilkan iklan yang disediakan oleh Google AdMob.</p>
+    <p>Periklanan tunduk pada kebijakan dan persyaratan Google yang berlaku.</p>
+    <p>SmartScan tidak menggunakan dokumen pindaian atau teks OCR Anda sebagai materi iklan atau untuk memilih iklan.</p>
+    <p>Premium dapat menghapus iklan sesuai fitur Premium yang ditawarkan di aplikasi.</p>
+
+    <h2>9. SmartScan Premium</h2>
+    <p>SmartScan dapat menawarkan fitur Premium melalui Google Play.</p>
+    <p>Harga dan fitur yang ditampilkan pada saat pembelian berlaku untuk pembelian terkait.</p>
+    <p>Pembayaran diproses oleh Google Play.</p>
+    <p>SmartScan tidak menerima atau menyimpan informasi kartu pembayaran Anda.</p>
+    <p>Pembelian, pengembalian dana, pembatalan, dan hal terkait pembayaran tunduk pada kebijakan dan prosedur Google Play yang berlaku.</p>
+
+    <h2>10. Notifikasi</h2>
+    <p>SmartScan dapat mengirim notifikasi terkait fitur aplikasi, status cadangan, pengingat, pembaruan, atau informasi lain terkait aplikasi.</p>
+    <p>Anda dapat mengontrol notifikasi melalui pengaturan perangkat Android dan, jika tersedia, pengaturan SmartScan.</p>
+
+    <h2>11. Penggunaan yang Dapat Diterima</h2>
+    <p>Anda setuju untuk tidak menggunakan SmartScan:</p>
+    <ul>
+        <li>Untuk tujuan yang melanggar hukum.</li>
+        <li>Untuk melanggar privasi atau hak orang lain.</li>
+        <li>Untuk memproses dokumen yang tidak Anda otorisasi untuk diakses atau disalin.</li>
+        <li>Untuk mendistribusikan materi ilegal atau berbahaya.</li>
+        <li>Untuk mengganggu pengoperasian SmartScan.</li>
+        <li>Untuk mencoba membahayakan keamanan SmartScan, layanan Google, atau akun orang lain.</li>
+        <li>Untuk menghindari kontrol keamanan atau akses.</li>
+        <li>Dengan cara yang melanggar hukum atau regulasi yang berlaku.</li>
+    </ul>
+
+    <h2>12. Ketersediaan dan Perubahan</h2>
+    <p>Kami berusaha menjaga SmartScan tetap andal dan bermanfaat, tetapi kami tidak dapat menjamin bahwa aplikasi akan selalu tersedia, tanpa gangguan, atau sepenuhnya bebas dari kesalahan.</p>
+    <p>Fitur SmartScan dapat dimodifikasi, ditingkatkan, ditangguhkan, atau dihentikan.</p>
+    <p>Layanan pihak ketiga yang digunakan SmartScan, termasuk layanan Google, juga dapat berubah, menjadi tidak tersedia sementara, atau menghentikan fitur secara independen dari SmartScan.</p>
+
+    <h2>13. Kehilangan Data dan Cadangan</h2>
+    <p>Anda bertanggung jawab menyimpan cadangan yang memadai dari dokumen penting.</p>
+    <p>Cadangan Google Drive disediakan sebagai kemudahan pencadangan dan tidak boleh dianggap sebagai layanan pengarsipan atau pemulihan bencana yang dijamin.</p>
+    <p>SmartScan tidak bertanggung jawab atas kehilangan data yang disebabkan oleh, misalnya:</p>
+    <ul>
+        <li>Kegagalan perangkat.</li>
+        <li>Penghapusan tidak disengaja.</li>
+        <li>Kehilangan atau pencurian perangkat Anda.</li>
+        <li>Kegagalan aplikasi atau penyimpanan.</li>
+        <li>Cadangan gagal atau tidak lengkap.</li>
+        <li>Masalah Google Drive atau gangguan layanan.</li>
+        <li>Kehilangan akses ke akun Google Anda.</li>
+        <li>Tindakan yang dilakukan oleh Anda atau orang lain yang memiliki akses ke perangkat atau akun Google Anda.</li>
+    </ul>
+
+    <h2>14. Layanan Pihak Ketiga</h2>
+    <p>SmartScan bergantung pada layanan pihak ketiga, terutama layanan Google, untuk fitur tertentu.</p>
+    <p>Layanan ini dapat mencakup:</p>
+    <ul>
+        <li>Login Google</li>
+        <li>Google Drive</li>
+        <li>Google AdMob</li>
+        <li>Layanan analitik dan pelaporan kerusakan</li>
+        <li>Penagihan Google Play</li>
+    </ul>
+    <p>Layanan pihak ketiga dikendalikan oleh penyedia masing-masing dan tunduk pada syarat, kebijakan, ketersediaan, dan batasan mereka sendiri.</p>
+
+    <h2>15. Penafian</h2>
+    <p>Sejauh diizinkan oleh hukum yang berlaku, SmartScan disediakan "sebagaimana adanya" dan "sebagaimana tersedia".</p>
+    <p>Kami tidak menjamin bahwa:</p>
+    <ul>
+        <li>Hasil OCR akan selalu akurat.</li>
+        <li>Setiap dokumen akan berhasil dipindai.</li>
+        <li>Setiap operasi OCR akan berhasil.</li>
+        <li>Cadangan Google Drive akan selalu berhasil diselesaikan.</li>
+        <li>File Anda akan selalu tersedia.</li>
+        <li>SmartScan akan selalu beroperasi tanpa bug atau gangguan.</li>
+        <li>Layanan pihak ketiga akan selalu tersedia.</li>
+        <li>Aplikasi akan memenuhi setiap tujuan atau persyaratan tertentu.</li>
+    </ul>
+
+    <h2>16. Batasan Tanggung Jawab</h2>
+    <p>Sejauh diizinkan oleh hukum yang berlaku, SmartScan dan pengembangnya tidak bertanggung jawab atas kerugian tidak langsung, insidental, khusus, konsekuensial, atau tak terduga yang timbul dari penggunaan atau ketidakmampuan Anda menggunakan aplikasi.</p>
+    <p>Ini dapat mencakup, jika diizinkan secara hukum, kehilangan data akibat kegagalan perangkat, penghapusan tidak disengaja, kegagalan aplikasi, masalah penyimpanan, kegagalan cadangan, masalah sinkronisasi, masalah Google Drive, atau gangguan layanan pihak ketiga lainnya.</p>
+    <p>Tidak ada dalam Syarat ini yang dimaksudkan untuk mengecualikan atau membatasi tanggung jawab atau hak hukum apa pun yang secara hukum tidak dapat dikecualikan atau dibatasi.</p>
+
+    <h2>17. Privasi</h2>
+    <p>Penggunaan SmartScan Anda juga diatur oleh <a href="https://calguard.github.io/privacy-id">Kebijakan Privasi</a> SmartScan.</p>
+    <p>Kebijakan Privasi menjelaskan informasi apa yang diakses SmartScan dan bagaimana layanan Google dapat memproses informasi saat Anda menggunakan fitur seperti Login Google, Cadangan Google Drive, periklanan, analitik, pelaporan kerusakan, dan pembelian Google Play.</p>
+
+    <h2>18. Persyaratan Usia</h2>
+    <p>SmartScan ditujukan untuk pengguna berusia 13 tahun ke atas.</p>
+    <p>Jika Anda berusia di bawah 13 tahun, jangan gunakan SmartScan.</p>
+    <p>Dengan menggunakan SmartScan, Anda mengonfirmasi bahwa Anda memenuhi persyaratan usia yang berlaku.</p>
+
+    <h2>19. Perubahan pada Syarat Ini</h2>
+    <p>Kami dapat memperbarui Syarat ini saat fitur, layanan, atau persyaratan hukum SmartScan berubah.</p>
+    <p>Saat kami membuat perubahan penting, kami akan memperbarui tanggal "Terakhir Diperbarui" di bagian bawah Syarat ini dan, jika perlu, memberikan pemberitahuan tambahan melalui aplikasi.</p>
+    <p>Penggunaan SmartScan secara terus-menerus setelah Syarat yang diperbarui berlaku berarti Anda menerima Syarat yang diperbarui, sejauh diizinkan oleh hukum yang berlaku.</p>
+
+    <h2>20. Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan tentang Syarat ini atau SmartScan, hubungi:</p>
+    <p>Email: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Pengembang: AEnage Dev</p>
+    <p>Dengan menggunakan SmartScan, Anda mengakui bahwa Anda telah membaca dan memahami Syarat Layanan ini.</p>
+
+    <hr>
+    <p class="meta">Terakhir diperbarui: September 2026 &nbsp;|&nbsp; SmartScan Versi 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

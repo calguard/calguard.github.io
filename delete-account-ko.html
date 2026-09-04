@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계정 삭제 요청 – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>계정 삭제 요청</h1>
+
+    <p>SmartScan은 AEnage Dev의 문서 스캔 및 OCR 앱으로 문서 스캔·정리·검색·백업을 돕습니다.</p>
+    <p>이 페이지는 SmartScan 계정과 관련 데이터를 삭제하는 방법을 설명합니다.</p>
+
+    <p class="meta">이 문서는 영문 페이지의 번역본이며 편의를 위해 제공합니다. 내용이 다를 경우 영문본이 우선합니다.</p>
+
+    <h2>1. SmartScan이 계정을 만드나요?</h2>
+    <p>SmartScan은 자체 사용자 계정을 만들지 않으며 계정 데이터를 저장하는 서버를 운영하지 않습니다.</p>
+    <p>SmartScan은 기존 Google 계정을 이용한 선택적 Google 로그인을 제공합니다. Google 로그인은 Google 드라이브 백업 및 관련 Google 기능 제공에만 사용됩니다.</p>
+    <p>SmartScan "계정"을 삭제한다는 것은 SmartScan에 대한 Google 계정 연결을 제거하고 기기에 SmartScan이 보관하는 정보를 삭제하는 것입니다.</p>
+
+    <h2>2. 계정 삭제 - 단계별 안내</h2>
+    <p>SmartScan 계정과 관련 데이터를 삭제하려면 다음 단계를 따르세요:</p>
+    <ul>
+        <li>SmartScan을 열고 설정으로 이동합니다.</li>
+        <li>SmartScan 내에서 Google 계정에서 로그아웃합니다.</li>
+        <li>Google 계정을 열고 보안에서 제3자 접근을 관리해 Google 계정에 연결된 앱 목록에서 SmartScan을 제거합니다.</li>
+        <li>SmartScan의 로컬 저장 정보를 삭제하려면 앱 데이터를 지우거나 기기에서 SmartScan을 삭제합니다.</li>
+    </ul>
+
+    <h2>3. 삭제되는 항목과 남는 항목</h2>
+    <p>위 단계로 계정을 삭제하면:</p>
+    <ul>
+        <li>SmartScan의 Google 계정 연결이 제거됩니다.</li>
+        <li>로컬 저장 로그인 정보(이름·이메일 주소·프로필 사진 등)는 로그아웃·앱 데이터 삭제·앱 삭제 시 삭제됩니다.</li>
+        <li>앱 설정과 로컬 저장 문서는 앱 데이터 삭제 또는 앱 삭제 시 삭제됩니다.</li>
+        <li>자신의 Google 드라이브에 백업한 문서는 자동으로 삭제되지 않습니다. SmartScan이 아닌 Google 계정에 있으므로 Google 드라이브를 통해 삭제할 때까지 남습니다.</li>
+    </ul>
+
+    <h2>4. 문의로 삭제 요청</h2>
+    <p>위 단계로 계정을 삭제할 수 없거나 다른 삭제 요청이 있으면 연락해 주세요: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span>. SmartScan과 함께 사용한 Google 계정을 적어 주세요.</p>
+
+    <h2>5. 데이터 보관</h2>
+    <p>SmartScan은 계정 정보를 담은 자체 서버나 클라우드 데이터베이스를 가지고 있지 않습니다.</p>
+    <p>Google 로그인·Google 드라이브·Google AdMob·분석/충돌 보고 서비스·Google Play 등 제3자 서비스가 처리하는 정보에는 각 서비스의 보관 정책이 적용됩니다.</p>
+
+    <h2>6. 문의</h2>
+    <p>계정 삭제나 이 페이지에 대해 질문이 있으면 연락해 주세요:</p>
+    <p>이메일: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>개발자: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">마지막 업데이트: 2026년 7월 &nbsp;|&nbsp; SmartScan 버전 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

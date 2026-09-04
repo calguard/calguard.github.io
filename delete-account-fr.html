@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demander la suppression du compte – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Demander la suppression du compte</h1>
+
+    <p>SmartScan est une application de numérisation de documents et d&rsquo;OCR d&rsquo;AEnage Dev qui vous aide à numériser, organiser, rechercher et sauvegarder vos documents.</p>
+    <p>Cette page explique comment supprimer votre compte SmartScan et les données associées.</p>
+
+    <p class="meta">Ceci est une traduction de la page en anglais, fournie pour votre commodité. En cas de différence, la version anglaise prévaut.</p>
+
+    <h2>1. SmartScan crée-t-il un compte&nbsp;?</h2>
+    <p>SmartScan ne crée pas son propre compte utilisateur et n&rsquo;exploite aucun serveur stockant des données de compte.</p>
+    <p>SmartScan propose une connexion Google optionnelle utilisant votre compte Google actuel. La connexion Google sert uniquement à fournir la sauvegarde Google Drive et les fonctions Google associées.</p>
+    <p>Supprimer votre «&nbsp;compte&nbsp;» SmartScan signifie retirer la connexion de votre compte Google à SmartScan et supprimer les informations que SmartScan conserve localement sur votre appareil.</p>
+
+    <h2>2. Supprimez votre compte – étape par étape</h2>
+    <p>Pour supprimer votre compte SmartScan et les données associées, suivez ces étapes&nbsp;:</p>
+    <ul>
+        <li>Ouvrez SmartScan et allez dans Paramètres.</li>
+        <li>Déconnectez votre compte Google depuis SmartScan.</li>
+        <li>Ouvrez votre compte Google, allez dans Sécurité et gérez l&rsquo;accès des tiers pour retirer SmartScan de la liste des applications connectées à votre compte Google.</li>
+        <li>Pour supprimer les informations SmartScan stockées localement, effacez les données de l&rsquo;application ou désinstallez SmartScan de votre appareil.</li>
+    </ul>
+
+    <h2>3. Que supprime-t-on et que garde-t-on&nbsp;?</h2>
+    <p>Lorsque vous supprimez votre compte avec les étapes ci-dessus&nbsp;:</p>
+    <ul>
+        <li>La connexion de SmartScan à votre compte Google est retirée.</li>
+        <li>Les informations de connexion stockées localement, comme votre nom, votre adresse e-mail et votre photo de profil, sont supprimées lorsque vous vous déconnectez, effacez les données de l&rsquo;application ou désinstallez l&rsquo;application.</li>
+        <li>Les préférences de l&rsquo;application et les documents stockés localement sont supprimés lorsque vous effacez les données de l&rsquo;application ou désinstallez l&rsquo;application.</li>
+        <li>Les documents précédemment sauvegardés dans votre propre Google Drive ne sont pas supprimés automatiquement. Comme ces fichiers sont dans votre compte Google, pas dans SmartScan, ils restent jusqu&rsquo;à ce que vous les supprimiez via Google Drive.</li>
+    </ul>
+
+    <h2>4. Demandez la suppression en nous contactant</h2>
+    <p>Si vous ne parvenez pas à supprimer votre compte avec les étapes ci-dessus, ou pour toute autre demande de suppression, contactez-nous à&nbsp;: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> en précisant le compte Google utilisé avec SmartScan.</p>
+
+    <h2>5. Conservation des données</h2>
+    <p>SmartScan ne maintient ni serveur ni base de données cloud contenant les informations de votre compte.</p>
+    <p>Les informations traitées par des services tiers comme la connexion Google, Google Drive, Google AdMob, les services d&rsquo;analyse et de rapports de plantage, et Google Play sont soumises aux politiques de conservation respectives de ces services.</p>
+
+    <h2>6. Contact</h2>
+    <p>Si vous avez des questions sur la suppression de votre compte ou sur cette page, contactez&nbsp;:</p>
+    <p>E-mail&nbsp;: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Développeur&nbsp;: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Dernière mise à jour&nbsp;: juillet 2026 &nbsp;|&nbsp; SmartScan version 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

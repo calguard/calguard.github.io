@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>隐私政策</h1>
+
+    <p>SmartScan 是一款文档扫描与 OCR 应用，帮您扫描、整理、搜索和备份文档。</p>
+
+    <p>本隐私政策说明 SmartScan 会访问哪些信息、这些信息如何使用、您的信息存储在哪里，以及您可以做哪些选择。</p>
+
+    <p>我们用通俗易懂的语言编写了本政策，方便您理解。</p>
+
+    <p class="meta">这是英文版隐私政策的译文，仅供参考。如有出入，以英文版为准。</p>
+
+    <h2>1. 您的文档</h2>
+    <p>您扫描的文档存储在您的设备上。</p>
+    <p>SmartScan 没有运营自己的云存储或后端服务器来存放您的文档。</p>
+    <p>除非您选择使用 Google 云端硬盘备份，否则您的文档图片和 OCR 文本都保留在您的设备上。</p>
+    <p>如果您启用 Google 云端硬盘备份，SmartScan 会使用您的 Google 账号和 Google 云端硬盘，将您选定的文档备份到您自己的 Google 云端硬盘账号中。</p>
+
+    <h2>2. 相机</h2>
+    <p>当您选择扫描文档时，SmartScan 会使用您设备的相机。</p>
+    <p>相机用于拍摄文档照片，以便扫描和处理。</p>
+    <p>SmartScan 不会持续录制或监控您的相机。</p>
+    <p>仅在扫描需要时才会使用相机权限。</p>
+    <p>如果您选择从设备相册导入已有照片作为扫描页，SmartScan 只会读取和处理您选定的那张照片（与新的扫描一样），绝不会用于其他用途。</p>
+
+    <h2>3. OCR 与文字识别</h2>
+    <p>SmartScan 使用 OCR（光学字符识别）来识别扫描文档中的文字，包括您选择的多种语言和文字（如拉丁文、中文、日文、韩文和天城文）。自动模式下的语言检测也在您的设备上完成。这些功能由 Google ML Kit 库提供，包括在您设备上运行的文字识别和文档扫描器。</p>
+    <p>当您使用扫描和 OCR 功能时，图片与文字的处理完全在您的设备上完成。ML Kit 不会将您的文档图片、OCR 文本或识别结果发送到 Google 服务器，从您的文档生成的 OCR 文本存储在您的设备本地，不会发送到 SmartScan 运营的服务器。</p>
+    <p>ML Kit 可能会不定期连接 Google 服务器，以接收错误修复、更新的模型和硬件加速器兼容性信息。ML Kit 还会向 Google 发送有关应用内 ML Kit API 的匿名性能和使用指标。Google 使用这些指标数据来衡量性能、调试、维护和改进 ML Kit API，并检测滥用行为，详见 Google 隐私政策。</p>
+    <p>OCR 技术偶尔可能产生错误结果。在依据 OCR 结果之前，请先对照原始文档核实重要信息。</p>
+
+    <h2>4. Google 登录</h2>
+    <p>当您选择使用 Google 云端硬盘备份时，Google 登录用于将您的 Google 账号连接到 SmartScan。</p>
+    <p>当您使用 Google 登录时，根据请求和授予的权限，Google 可能会向 SmartScan 提供与您的 Google 账号相关的基本账号信息，例如您的姓名、电子邮件地址、个人资料信息和账号标识符。</p>
+    <p>这些信息用于验证您的 Google 账号并提供 Google 云端硬盘备份功能。</p>
+    <p>SmartScan 不会索取您的 Google 密码。</p>
+    <p>Google 通过其自有服务处理身份验证，并按照 Google 适用的隐私政策和条款处理信息。</p>
+
+    <h2>5. Google 云端硬盘备份</h2>
+    <p>Google 云端硬盘备份是一项可选功能。</p>
+    <p>当您选择使用它时，SmartScan 会请求访问 Google 云端硬盘的权限，用于备份或管理与 SmartScan 相关的文件。</p>
+    <p>您选定的文档将备份到您自己的 Google 云端硬盘账号。</p>
+    <p>SmartScan 没有为您的文档运营单独的云存储服务。</p>
+    <p>通过 Google 云端硬盘存储的文件仍归属于您的 Google 账号，并受 Google 的隐私、安全和服务政策约束。</p>
+    <p>您可以通过 SmartScan 中的可用控件或您的 Google 账号停止使用 Google 云端硬盘备份，或移除 SmartScan 对您 Google 账号的访问权限。</p>
+
+    <h2>6. 我们通过 Google 服务收到的信息</h2>
+    <p>SmartScan 可能会收到提供 Google 相关功能所需的有限信息。</p>
+    <p>根据您使用的功能，可能包括：</p>
+    <ul>
+        <li>登录所需的 Google 账号信息。</li>
+        <li>识别您的 Google 云端硬盘账号所需的信息。</li>
+        <li>执行 Google 云端硬盘备份所需的 SmartScan 备份文件和文件夹信息。</li>
+        <li>处理 Google Play 购买所需的信息。</li>
+    </ul>
+    <p>SmartScan 不会将您的 Google 云端硬盘文档或其内容用于广告。</p>
+
+    <h2>7. 广告</h2>
+    <p>SmartScan 免费版可能会展示由 Google AdMob 提供的广告。</p>
+    <p>SmartScan 不会使用您扫描文档的内容或 OCR 文本来选择广告。</p>
+    <p>与广告相关的信息可能由 Google 及其广告合作伙伴根据其适用政策进行处理。</p>
+    <p>SmartScan 根据应用已申报的目标受众，遵守 Google Play 适用的广告要求。</p>
+    <p>高级版可能会移除广告，具体取决于应用中提供的高级功能。</p>
+
+    <h2>8. 分析与崩溃报告</h2>
+    <p>SmartScan 可能会使用 Google 提供的分析与崩溃报告服务，以帮助我们了解应用的使用情况、发现崩溃、诊断技术问题并改进应用。</p>
+    <p>这些服务可能会处理以下技术信息：</p>
+    <ul>
+        <li>设备和操作系统信息。</li>
+        <li>应用版本。</li>
+        <li>崩溃信息。</li>
+        <li>性能信息。</li>
+        <li>一般的应用使用信息。</li>
+    </ul>
+    <p>SmartScan 不会使用这些服务上传或分析您扫描文档或 OCR 文本的内容。</p>
+    <p>这些服务处理的信息受服务提供方适用政策的约束。</p>
+
+    <h2>9. Google Play 结算</h2>
+    <p>如果 SmartScan 提供可购买的高级功能，付款将通过 Google Play 处理。</p>
+    <p>SmartScan 不会接收或存储您的信用卡、借记卡、银行账号或其他付款卡信息。</p>
+    <p>Google Play 负责付款处理以及适用的购买和退款流程。</p>
+
+    <h2>10. 通知</h2>
+    <p>SmartScan 可能会就以下功能使用通知：</p>
+    <ul>
+        <li>备份状态。</li>
+        <li>备份提醒。</li>
+        <li>应用更新。</li>
+        <li>其他应用相关信息。</li>
+    </ul>
+    <p>您可以通过 Android 设备设置以及 SmartScan 设置（如有）来控制通知权限。</p>
+
+    <h2>11. SmartScan 不会做的事</h2>
+    <p>SmartScan 不会：</p>
+    <ul>
+        <li>出售您的个人信息。</li>
+        <li>出租您的个人信息。</li>
+        <li>将您扫描的文档用于广告。</li>
+        <li>将您的 OCR 文本用于广告。</li>
+        <li>将您的文档上传到 SmartScan 运营的云服务器。</li>
+        <li>将您的文档存储在 SmartScan 运营的云数据库中。</li>
+        <li>与广告商分享您扫描的文档。</li>
+    </ul>
+    <p>如果您选择 Google 云端硬盘备份，您选定的文档会因为您的备份请求而发送到 Google 云端硬盘。</p>
+
+    <h2>12. 您的文档存储在哪里</h2>
+    <p>您的文档可能存在于两个地方：</p>
+    <p>在您的设备上：您的原始扫描件和 OCR 信息由 SmartScan 本地存储。</p>
+    <p>在您的 Google 云端硬盘中：如果您启用 Google 云端硬盘备份，选定的文档也可能存储在您自己的 Google 云端硬盘账号中。</p>
+    <p>SmartScan 不会在应用使用的 Google 服务之外，为您的文档另行创建云端副本。</p>
+
+    <h2>13. 您的选择</h2>
+    <p>您可以选择是否：</p>
+    <ul>
+        <li>使用 Google 登录。</li>
+        <li>使用 Google 云端硬盘备份。</li>
+        <li>仅将文档存储在您的设备上。</li>
+        <li>启用或停用通知。</li>
+        <li>购买高级版。</li>
+        <li>从 SmartScan 删除文档。</li>
+        <li>从您的 Google 云端硬盘删除已备份的文档。</li>
+        <li>移除 SmartScan 对您 Google 账号的访问权限。</li>
+    </ul>
+    <p>您的 Google 云端硬盘账号由您掌控，您可以通过 Google 管理其中的文件。</p>
+
+    <h2>14. 数据删除</h2>
+    <p>SmartScan 在设计上将文档数据保留在您的设备上，或在您选择备份时保留在您自己的 Google 云端硬盘中。</p>
+    <p>您可以使用 SmartScan 中的可用控件删除本地存储的文档。</p>
+    <p>已备份到 Google 云端硬盘的文档可以从您的 Google 云端硬盘中删除。</p>
+    <p>如果 SmartScan 提供账号或账号相关功能，您可以通过应用内提供的账号删除选项，或开发者提供的外部账号删除方式，请求删除与该功能相关的账号信息。</p>
+    <p>从设备中删除 SmartScan 并不会自动删除您之前备份到 Google 云端硬盘的文件。您必须通过 Google 云端硬盘管理这些文件。</p>
+
+    <h2>15. 数据保留</h2>
+    <p>SmartScan 没有维护包含您扫描文档的自有云数据库。</p>
+    <p>本地存储的文档会保留在您的设备上，直到您将其删除、清除应用数据、卸载应用或以其他方式移除。</p>
+    <p>备份到 Google 云端硬盘的文档会保留在您的 Google 云端硬盘中，直到您将其删除，或根据您的 Google 云端硬盘设置被移除。</p>
+    <p>由 Google 登录、Google 云端硬盘、Google AdMob、分析/崩溃报告服务和 Google Play 等第三方服务处理的信息，受这些服务各自的保留政策约束。</p>
+
+    <h2>16. 安全</h2>
+    <p>SmartScan 在设计上尽量减少对您信息的不必要收集。</p>
+    <p>您的文档和 OCR 文本主要在您的设备上处理和存储。</p>
+    <p>当您使用 Google 云端硬盘备份时，您的文件会通过 Google 的服务传输到 Google 云端硬盘。</p>
+    <p>您有责任保护对您设备和 Google 账号的访问，包括使用适当的设备安全措施并妥善保管 Google 账号凭据。</p>
+    <p>任何电子存储或传输方式都无法保证绝对安全。</p>
+
+    <h2>17. 13 岁及以上用户</h2>
+    <p>SmartScan 适用于 13 岁及以上的用户。</p>
+    <p>SmartScan 不适用于 13 岁以下的儿童。</p>
+    <p>如果您未满 13 岁，请勿使用 SmartScan。</p>
+    <p>应用的目标受众已在 Google Play 的目标受众和内容部分中声明。Google Play 可能会根据已申报的受众和适用政策提出额外要求。</p>
+
+    <h2>18. 第三方服务</h2>
+    <p>SmartScan 使用 Google 服务来提供某些功能。</p>
+    <p>可能包括：</p>
+    <ul>
+        <li>Google 登录</li>
+        <li>Google 云端硬盘</li>
+        <li>Google ML Kit（设备端文字识别和文档扫描器，包括拉丁文、中文、日文、韩文和天城文语言模型）</li>
+        <li>Google AdMob</li>
+        <li>Google Analytics 和/或崩溃报告服务</li>
+        <li>Google Play 结算</li>
+    </ul>
+    <p>ML Kit 的处理在您的设备上完成。Google 对 ML Kit 指标数据的处理见第 3 节和 Google 隐私政策。</p>
+    <p>这些服务由 Google 提供和控制，可能会按照其自身的隐私政策和条款处理信息。</p>
+    <p>SmartScan 不控制这些第三方服务的隐私做法。</p>
+
+    <h2>19. 本隐私政策的变更</h2>
+    <p>当 SmartScan 的功能、服务或隐私做法发生变化时，我们可能会更新本隐私政策。</p>
+    <p>当我们做出重要变更时，我们会更新本政策底部的“最后更新”日期，并在适当时通过应用内提供额外通知。</p>
+
+    <h2>20. 联系我们</h2>
+    <p>如果您对本隐私政策或 SmartScan 的隐私做法有疑问、疑虑或请求，请联系：</p>
+    <p>电子邮件：<span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>开发者：AEnage Dev</p>
+    <p>使用 SmartScan 即表示您确认已阅读并理解本隐私政策。</p>
+
+    <hr>
+    <p class="meta">最后更新：2026 年 9 月 &nbsp;|&nbsp; SmartScan 版本 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar exclusão de conta – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Solicitar exclusão de conta</h1>
+
+    <p>O SmartScan é um aplicativo de digitalização de documentos e OCR da AEnage Dev que ajuda você a digitalizar, organizar, pesquisar e fazer backup dos seus documentos.</p>
+    <p>Esta página explica como excluir sua conta do SmartScan e os dados associados a ela.</p>
+
+    <p class="meta">Esta é uma tradução da página em inglês, fornecida para sua comodidade. Em caso de divergência, prevalece a versão em inglês.</p>
+
+    <h2>1. O SmartScan cria uma conta?</h2>
+    <p>O SmartScan não cria sua própria conta de usuário nem opera um servidor que armazene dados de contas.</p>
+    <p>O SmartScan oferece um login do Google opcional usando sua conta Google atual. O login do Google serve apenas para fornecer o Backup do Google Drive e recursos relacionados do Google.</p>
+    <p>Excluir sua "conta" com o SmartScan significa remover a conexão da sua conta Google com o SmartScan e excluir as informações que o SmartScan guarda localmente no seu dispositivo.</p>
+
+    <h2>2. Exclua sua conta – passo a passo</h2>
+    <p>Para excluir sua conta do SmartScan e os dados associados, siga estas etapas:</p>
+    <ul>
+        <li>Abra o SmartScan e vá em Configurações.</li>
+        <li>Saia da sua conta Google de dentro do SmartScan.</li>
+        <li>Abra sua Conta Google, vá em Segurança e gerencie o acesso de terceiros para remover o SmartScan da lista de apps conectados à sua conta Google.</li>
+        <li>Para excluir as informações do SmartScan armazenadas localmente, limpe os dados do app ou desinstale o SmartScan do seu dispositivo.</li>
+    </ul>
+
+    <h2>3. O que é excluído e o que é mantido?</h2>
+    <p>Quando você exclui sua conta com as etapas acima:</p>
+    <ul>
+        <li>A conexão do SmartScan com sua conta Google é removida.</li>
+        <li>Informações de login armazenadas localmente, como seu nome, e-mail e foto de perfil, são excluídas quando você sai da conta, limpa os dados do app ou desinstala o app.</li>
+        <li>Preferências do app e documentos armazenados localmente são excluídos quando você limpa os dados do app ou desinstala o app.</li>
+        <li>Documentos dos quais você fez backup antes na sua própria conta do Google Drive não são excluídos automaticamente. Como esses arquivos estão na sua conta Google, não no SmartScan, permanecem até você excluí-los pelo Google Drive.</li>
+    </ul>
+
+    <h2>4. Solicite a exclusão entrando em contato</h2>
+    <p>Se não conseguir excluir sua conta com as etapas acima, ou se tiver outra solicitação de exclusão, entre em contato: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> e inclua a conta Google usada com o SmartScan.</p>
+
+    <h2>5. Retenção de dados</h2>
+    <p>O SmartScan não mantém seu próprio servidor nem banco de dados em nuvem com as informações da sua conta.</p>
+    <p>Informações processadas por serviços de terceiros como login do Google, Google Drive, Google AdMob, serviços de análise/relatórios de falhas e Google Play estão sujeitas às respectivas políticas de retenção desses serviços.</p>
+
+    <h2>6. Contato</h2>
+    <p>Se tiver dúvidas sobre como excluir sua conta ou sobre esta página, entre em contato:</p>
+    <p>E-mail: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Desenvolvedor: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Última atualização: julho de 2026 &nbsp;|&nbsp; SmartScan versão 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

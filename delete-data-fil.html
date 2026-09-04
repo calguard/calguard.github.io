@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilingin ang Pag-delete ng Data – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Hilingin ang Pag-delete ng Data</h1>
+
+    <p>Ang SmartScan ay isang document scanning at OCR app na tumutulong sa iyo na mag-scan, mag-ayos, maghanap, at mag-backup ng iyong mga dokumento.</p>
+    <p>Ipinapaliwanag ng page na ito kung paano i-delete ang iyong SmartScan data. Naka-store ang iyong mga dokumento sa iyong device at, kung pinili mo lang ang Google Drive Backup, sa sarili mong Google Drive account. Walang sariling cloud storage o backend server ang SmartScan para sa iyong mga dokumento.</p>
+
+    <p class="meta">Ito ay salin ng English na page, para sa iyong kaginhawaan. Kung may pagkakaiba, ang English na bersyon ang masusunod.</p>
+
+    <h2>1. Anong Data ang Sine-store ng SmartScan?</h2>
+    <p>Karamihan sa SmartScan data ay sa iyo at nasa isa sa dalawang lugar:</p>
+    <ul>
+        <li>Sa iyong device: ang mga larawan ng na-scan na dokumento, OCR text, search index, app preferences, at lokal na naka-store na impormasyon sa sign-in.</li>
+        <li>Sa iyong Google Drive: kung i-enable mo ang Google Drive Backup, ang mga pinili mong dokumentong bina-backup ay naka-store sa sarili mong Google Drive account.</li>
+    </ul>
+    <p>Walang server ang SmartScan na nagse-store ng iyong mga dokumento o OCR text.</p>
+
+    <h2>2. I-delete ang mga Dokumentong Naka-store sa Iyong Device</h2>
+    <p>Para i-delete ang mga dokumento at ang OCR text ng mga ito mula sa iyong device:</p>
+    <ul>
+        <li>Buksan ang SmartScan at pumunta sa tab na Files.</li>
+        <li>Piliin ang dokumento o mga dokumentong gusto mong i-delete.</li>
+        <li>Gamitin ang opsyon sa pag-delete para alisin ang mga ito.</li>
+    </ul>
+    <p>Para i-delete nang sabay-sabay ang lahat ng SmartScan data mula sa iyong device, maaari mo ring:</p>
+    <ul>
+        <li>Buksan ang Settings ng iyong Android device, pumunta sa Apps, piliin ang SmartScan, at piliin ang Clear storage o Clear data, o</li>
+        <li>I-uninstall ang SmartScan.</li>
+    </ul>
+    <p>Ang pag-clear sa data ng app o pag-uninstall sa app ay nagde-delete sa mga lokal na naka-store na dokumento, OCR text, impormasyon sa sign-in, at app preferences mula sa iyong device.</p>
+
+    <h2>3. I-delete ang mga Dokumentong Naka-backup sa Google Drive</h2>
+    <p>Kung ginamit mo ang Google Drive Backup, ang mga naka-backup na dokumento ay naka-store sa sarili mong Google Drive account. Ang pag-delete sa SmartScan mula sa iyong device ay hindi nagde-delete sa mga file na ito.</p>
+    <p>Para i-delete ang mga naka-backup na dokumento:</p>
+    <ul>
+        <li>Buksan ang SmartScan backup folder sa iyong Google Drive, o</li>
+        <li>Buksan ang SmartScan, pumunta sa tab na Cloud, at i-delete ang mga file mula doon.</li>
+    </ul>
+    <p>Dahil ang mga file na ito ay nasa iyong Google Drive account, maaari mong pamahalaan o permanenteng i-delete ang mga ito sa pamamagitan ng iyong Google Drive.</p>
+
+    <h2>4. Alisin ang Access ng SmartScan sa Iyong Google Account</h2>
+    <p>Para ihinto ang pag-access ng SmartScan sa iyong Google account:</p>
+    <ul>
+        <li>Buksan ang SmartScan, pumunta sa Settings, at mag-sign out, o</li>
+        <li>Buksan ang iyong Google Account, pumunta sa Security, at pamahalaan ang third-party access para alisin ang SmartScan.</li>
+    </ul>
+
+    <h2>5. Humingi ng Karagdagang Pag-delete</h2>
+    <p>Walang sariling cloud server ang SmartScan, kaya walang mga dokumento o personal na data na naka-store sa server na pinapatakbo ng SmartScan na ide-delete.</p>
+    <p>Kung mayroon kang hiling sa pag-delete na hindi sakop ng mga hakbang sa itaas, makipag-ugnayan sa amin sa: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> at isama ang iyong hiling at ang Google account na ginamit sa SmartScan (kung mayroon).</p>
+
+    <h2>6. Ano ang Nade-delete at Ano ang Nananatili?</h2>
+    <p>Kapag dine-delete mo ang iyong data gamit ang mga hakbang sa itaas:</p>
+    <ul>
+        <li>Ang mga dokumento, larawan, at OCR text na naka-store sa iyong device ay nade-delete.</li>
+        <li>Ang lokal na naka-store na impormasyon sa sign-in (tulad ng iyong pangalan at email address) ay nade-delete.</li>
+        <li>Ang app preferences at search index ay nade-delete.</li>
+        <li>Ang mga naka-backup na dokumento sa sarili mong Google Drive ay hindi awtomatikong nade-delete. Nananatili ang mga ito sa iyong Google Drive hanggang sa i-delete mo ang mga ito, dahil nasa iyong account ang mga ito, hindi sa SmartScan.</li>
+    </ul>
+
+    <h2>7. Pagpapanatili ng Data</h2>
+    <p>Walang sariling cloud database ang SmartScan na naglalaman ng iyong mga na-scan na dokumento.</p>
+    <p>Ang mga lokal na naka-store na dokumento ay nananatili sa iyong device hanggang sa i-delete mo ang mga ito, i-clear ang data ng application, o i-uninstall ang application.</p>
+    <p>Ang mga dokumentong naka-backup sa Google Drive ay nananatili sa iyong Google Drive hanggang sa i-delete mo ang mga ito o maalis ang mga ito ayon sa mga setting ng iyong Google Drive.</p>
+    <p>Ang impormasyong pino-process ng mga third-party service tulad ng Google Sign-In, Google Drive, Google AdMob, mga serbisyo ng analytics/crash-reporting, at Google Play ay sakop ng kani-kanilang mga patakaran sa pagpapanatili ng mga serbisyong iyon.</p>
+
+    <h2>8. Makipag-ugnayan</h2>
+    <p>Kung mayroon kang mga tanong tungkol sa pag-delete ng iyong data o tungkol sa page na ito, mangyaring makipag-ugnayan sa:</p>
+    <p>Email: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Developer: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Huling na-update: Hulyo 2026 &nbsp;|&nbsp; SmartScan Bersyon 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서비스 약관 – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>서비스 약관</h1>
+
+    <p>SmartScan에 오신 것을 환영합니다.</p>
+    <p>이 서비스 약관은 SmartScan 사용에 대한 규칙과 조건을 설명합니다.</p>
+    <p>SmartScan을 설치하거나 사용하면 이 약관에 동의한 것으로 간주됩니다. 동의하지 않으면 앱을 사용하지 마세요.</p>
+
+    <p class="meta">이 문서는 영문 서비스 약관의 번역본이며 편의를 위해 제공합니다. 내용이 다를 경우 영문본이 우선합니다.</p>
+
+    <h2>1. SmartScan 소개</h2>
+    <p>SmartScan은 문서 스캔 및 OCR 앱입니다.</p>
+    <p>사용 중인 버전에서 제공하는 기능에 따라 SmartScan에서 다음을 할 수 있습니다:</p>
+    <ul>
+        <li>기기 카메라로 문서 스캔.</li>
+        <li>OCR로 문서 처리.</li>
+        <li>스캔 문서에서 텍스트 추출 및 검색.</li>
+        <li>문서를 기기에 저장.</li>
+        <li>선택한 문서를 자신의 Google 드라이브 계정에 백업.</li>
+        <li>Google 로그인 사용.</li>
+        <li>Google Play에서 SmartScan 프리미엄 구매.</li>
+    </ul>
+
+    <h2>2. 당신의 문서</h2>
+    <p>SmartScan으로 처리하는 문서·이미지·텍스트의 소유권은 당신에게 있습니다.</p>
+    <p>SmartScan은 당신의 개인 문서에 대한 소유권을 주장하지 않습니다.</p>
+    <p>SmartScan에서 사용하는 문서를 스캔·복사·저장·처리·백업할 법적 권리나 허가가 있는지 확인할 책임은 당신에게 있습니다.</p>
+    <p>타인의 개인정보·저작권·기밀 유지 또는 기타 법적 권리를 침해하는 방식으로 문서에 접근·복사·배포·처리하기 위해 SmartScan을 사용해서는 안 됩니다.</p>
+
+    <h2>3. 로컬 저장소</h2>
+    <p>SmartScan은 문서와 OCR 정보를 기기에 저장하도록 설계되었습니다.</p>
+    <p>기기를 보호하고 중요 문서를 백업하는 것은 당신의 책임입니다.</p>
+    <p>기기를 분실·파손·초기화·교체하거나 SmartScan을 삭제하거나 앱 데이터를 지우면 로컬 저장 문서가 영구히 손실될 수 있습니다.</p>
+
+    <h2>4. Google 드라이브 백업</h2>
+    <p>Google 드라이브 백업은 선택 기능입니다.</p>
+    <p>사용 설정하면 Google 로그인과 Google 드라이브를 이용해 선택한 문서를 자신의 Google 드라이브 계정에 백업합니다.</p>
+    <p>SmartScan은 문서를 위한 자체 클라우드 저장 서비스를 운영하지 않습니다.</p>
+    <p>Google 계정과 Google 드라이브 파일 관리는 당신의 책임입니다.</p>
+    <p>Google 계정이 안전하게 보호되는지 확인하세요.</p>
+    <p>Google 드라이브를 사용할 때는 Google의 관련 약관과 정책도 적용됩니다.</p>
+
+    <h2>5. Google 계정 접근</h2>
+    <p>Google 드라이브 백업을 사용하려면 Google 로그인이 필요할 수 있습니다.</p>
+    <p>Google 드라이브 백업을 사용하면 선택한 백업 기능 제공에 필요한 Google 서비스와 Google 드라이브 정보에 대한 접근을 SmartScan에 허용하는 것입니다.</p>
+    <p>Google 계정 설정에서 SmartScan의 접근을 취소할 수 있습니다.</p>
+    <p>취소하면 다시 허용할 때까지 Google 드라이브 백업이 동작하지 않을 수 있습니다.</p>
+
+    <h2>6. OCR</h2>
+    <p>SmartScan은 OCR 기술로 스캔 문서의 텍스트를 인식합니다. 선택하면 라틴 문자·중국어·일본어·한국어·데바나가리 등 여러 언어와 스크립트를 지원합니다. 자동 모드의 언어 감지와 문자 인식은 당신의 기기에서 수행됩니다.</p>
+    <p>OCR 결과는 자동으로 생성되며 오류를 포함할 수 있습니다.</p>
+    <p>SmartScan은 OCR 결과가 완전히 정확·완전·신뢰할 수 있다고 보장하지 않습니다.</p>
+    <p>OCR 결과를 신뢰하기 전에 원본 문서에서 중요한 정보를 확인하세요.</p>
+
+    <h2>7. 카메라와 스캔</h2>
+    <p>SmartScan은 문서를 스캔할 때 기기의 카메라를 사용합니다.</p>
+    <p>SmartScan에서 사용하는 문서에 대해 사진을 찍고·스캔하고·복사하고·처리할 권한이 있는지(갤러리에서 가져온 사진을 스캔 페이지로 쓰는 경우 포함) 확인할 책임은 당신에게 있습니다.</p>
+    <p>SmartScan이 타인이나 조직에 속한 문서·자료의 권리를 부여하지 않습니다.</p>
+
+    <h2>8. 광고</h2>
+    <p>SmartScan 무료 버전에는 Google AdMob이 제공하는 광고가 표시될 수 있습니다.</p>
+    <p>광고에는 Google의 관련 정책과 요구사항이 적용됩니다.</p>
+    <p>SmartScan은 스캔 문서나 OCR 텍스트를 광고 자료나 광고 선택에 사용하지 않습니다.</p>
+    <p>프리미엄에서는 앱에서 제공하는 프리미엄 기능에 따라 광고가 제거될 수 있습니다.</p>
+
+    <h2>9. SmartScan 프리미엄</h2>
+    <p>SmartScan은 Google Play를 통해 프리미엄 기능을 제공할 수 있습니다.</p>
+    <p>구매 시 표시된 가격과 기능이 해당 구매에 적용됩니다.</p>
+    <p>결제는 Google Play에서 처리됩니다.</p>
+    <p>SmartScan은 결제 카드 정보를 받거나 저장하지 않습니다.</p>
+    <p>구매·환불·취소·결제 관련 사항에는 Google Play의 관련 정책과 절차가 적용됩니다.</p>
+
+    <h2>10. 알림</h2>
+    <p>SmartScan은 앱 기능·백업 상태·알림·업데이트 또는 기타 앱 관련 정보에 대해 알림을 보낼 수 있습니다.</p>
+    <p>Android 기기 설정과 SmartScan 설정(있는 경우)에서 알림을 관리할 수 있습니다.</p>
+
+    <h2>11. 허용되는 사용</h2>
+    <p>SmartScan을 다음 목적으로 사용하지 않기로 동의합니다:</p>
+    <ul>
+        <li>불법적인 목적.</li>
+        <li>타인의 개인정보나 권리 침해.</li>
+        <li>접근·복사 권한이 없는 문서 처리.</li>
+        <li>불법 또는 유해 자료 배포.</li>
+        <li>SmartScan 운영 방해.</li>
+        <li>SmartScan·Google 서비스·타인 계정의 보안 침해 시도.</li>
+        <li>보안 또는 접근 제어 회피.</li>
+        <li>관련 법규를 위반하는 방법.</li>
+    </ul>
+
+    <h2>12. 가용성과 변경</h2>
+    <p>SmartScan을 신뢰할 수 있고 유용하게 유지하려 노력하지만 항상 이용 가능·중단 없음·완전히 오류 없음을 보장할 수 없습니다.</p>
+    <p>SmartScan 기능은 변경·개선·중단·종료될 수 있습니다.</p>
+    <p>SmartScan이 사용하는 제3자 서비스(Google 서비스 포함)도 SmartScan과 무관하게 변경·일시 사용 불가·기능 종료될 수 있습니다.</p>
+
+    <h2>13. 데이터 손실과 백업</h2>
+    <p>중요 문서의 적절한 백업 유지는 당신의 책임입니다.</p>
+    <p>Google 드라이브 백업은 백업 편의로 제공되며 보장된 보관 또는 재해 복구 서비스로 간주되지 않습니다.</p>
+    <p>SmartScan은 예를 들어 다음으로 인한 데이터 손실에 책임지지 않습니다:</p>
+    <ul>
+        <li>기기 고장.</li>
+        <li>실수로 삭제.</li>
+        <li>기기 분실 또는 도난.</li>
+        <li>앱 또는 저장소 고장.</li>
+        <li>백업 실패 또는 불완전.</li>
+        <li>Google 드라이브 문제 또는 서비스 중단.</li>
+        <li>Google 계정 접근 상실.</li>
+        <li>당신 또는 기기·Google 계정에 접근할 수 있는 타인의 행동.</li>
+    </ul>
+
+    <h2>14. 제3자 서비스</h2>
+    <p>SmartScan은 일부 기능에 제3자 서비스(주로 Google 서비스)를 의존합니다.</p>
+    <p>다음 서비스가 포함될 수 있습니다:</p>
+    <ul>
+        <li>Google 로그인</li>
+        <li>Google 드라이브</li>
+        <li>Google AdMob</li>
+        <li>분석·충돌 보고 서비스</li>
+        <li>Google Play 결제</li>
+    </ul>
+    <p>제3자 서비스는 각 제공업체가 관리하며 자체 약관·정책·가용성·제한이 적용됩니다.</p>
+
+    <h2>15. 면책 조항</h2>
+    <p>관련 법이 허용하는 최대 한도에서 SmartScan은 "있는 그대로" 및 "제공 가능한 범위"로 제공됩니다.</p>
+    <p>다음을 보장하지 않습니다:</p>
+    <ul>
+        <li>OCR 결과가 항상 정확함.</li>
+        <li>모든 문서가 스캔 성공함.</li>
+        <li>모든 OCR 작업이 성공함.</li>
+        <li>Google 드라이브 백업이 항상 정상 완료됨.</li>
+        <li>파일이 항상 이용 가능함.</li>
+        <li>SmartScan이 항상 버그나 중단 없이 동작함.</li>
+        <li>제3자 서비스가 항상 이용 가능함.</li>
+        <li>앱이 모든 특정 목적이나 요구를 충족함.</li>
+    </ul>
+
+    <h2>16. 책임의 제한</h2>
+    <p>관련 법이 허용하는 최대 한도에서 SmartScan과 개발자는 앱 사용 또는 사용 불가로 인한 간접·부수·특별·결과적·예상치 못한 손해에 책임지지 않습니다.</p>
+    <p>법적으로 허용되는 경우 여기에는 기기 고장·실수 삭제·앱 고장·저장소 문제·백업 실패·동기화 문제·Google 드라이브 문제 또는 기타 제3자 서비스 중단으로 인한 데이터 손실이 포함될 수 있습니다.</p>
+    <p>이 약관의 어떤 내용도 법적으로 제외·제한할 수 없는 책임이나 법적 권리를 제외·제한하려는 의도가 없습니다.</p>
+
+    <h2>17. 개인정보</h2>
+    <p>SmartScan 사용에는 SmartScan <a href="https://calguard.github.io/privacy-ko">개인정보처리방침</a>도 적용됩니다.</p>
+    <p>개인정보처리방침은 SmartScan이 접근하는 정보와 Google 로그인·Google 드라이브 백업·광고·분석·충돌 보고·Google Play 구매 등의 기능 사용 시 Google 서비스가 정보를 처리할 가능성을 설명합니다.</p>
+
+    <h2>18. 연령 요건</h2>
+    <p>SmartScan은 13세 이상 사용자를 대상으로 합니다.</p>
+    <p>13세 미만은 SmartScan을 사용하지 마세요.</p>
+    <p>SmartScan을 사용함으로써 관련 연령 요건을 충족함을 확인한 것입니다.</p>
+
+    <h2>19. 이 약관의 변경</h2>
+    <p>SmartScan의 기능·서비스·법적 요구가 바뀌면 이 약관을 업데이트할 수 있습니다.</p>
+    <p>중요한 변경 시 이 약관 하단의 "마지막 업데이트" 날짜를 업데이트하고, 적절한 경우 앱을 통해 추가 안내합니다.</p>
+    <p>업데이트된 약관 발효 후 SmartScan을 계속 사용하면 관련 법이 허용하는 범위에서 업데이트된 약관을 수락한 것입니다.</p>
+
+    <h2>20. 문의</h2>
+    <p>이 약관이나 SmartScan에 대해 질문이 있으면 연락해 주세요:</p>
+    <p>이메일: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>개발자: AEnage Dev</p>
+    <p>SmartScan을 사용함으로써 이 서비스 약관을 읽고 이해했음을 인정합니다.</p>
+
+    <hr>
+    <p class="meta">마지막 업데이트: 2026년 9월 &nbsp;|&nbsp; SmartScan 버전 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

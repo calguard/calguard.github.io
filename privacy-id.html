@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Kebijakan Privasi</h1>
+
+    <p>SmartScan adalah aplikasi pemindai dokumen dan OCR yang membantu Anda memindai, mengatur, mencari, dan mencadangkan dokumen.</p>
+
+    <p>Kebijakan Privasi ini menjelaskan informasi apa yang diakses SmartScan, cara penggunaannya, tempat informasi Anda disimpan, dan pilihan apa yang Anda miliki.</p>
+
+    <p>Kami menulis kebijakan ini dalam bahasa sederhana agar mudah dipahami.</p>
+
+    <p class="meta">Ini adalah terjemahan dari Kebijakan Privasi berbahasa Inggris, disediakan untuk kenyamanan Anda. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</p>
+
+    <h2>1. Dokumen Anda</h2>
+    <p>Dokumen yang Anda pindai tersimpan di perangkat Anda.</p>
+    <p>SmartScan tidak mengoperasikan penyimpanan cloud sendiri atau server backend untuk menyimpan dokumen Anda.</p>
+    <p>Gambar dokumen dan teks OCR Anda tetap berada di perangkat Anda kecuali Anda memilih menggunakan Cadangan Google Drive.</p>
+    <p>Jika Anda mengaktifkan Cadangan Google Drive, SmartScan menggunakan akun Google dan Google Drive Anda untuk mencadangkan dokumen pilihan ke akun Google Drive Anda sendiri.</p>
+
+    <h2>2. Kamera</h2>
+    <p>SmartScan menggunakan kamera perangkat Anda saat Anda memilih memindai dokumen.</p>
+    <p>Kamera digunakan untuk mengambil gambar dokumen untuk pemindaian dan pemrosesan.</p>
+    <p>SmartScan tidak merekam atau memantau kamera Anda secara terus-menerus.</p>
+    <p>Akses kamera hanya digunakan saat diperlukan untuk pemindaian.</p>
+    <p>Jika Anda memilih mengimpor foto yang ada dari galeri perangkat sebagai halaman pindaian, SmartScan hanya membaca dan memproses foto yang Anda pilih, sama seperti pindaian baru, dan tidak pernah menggunakannya untuk hal lain.</p>
+
+    <h2>3. OCR dan Pengenalan Teks</h2>
+    <p>SmartScan menggunakan OCR (pengenalan karakter optik) untuk mengenali teks dalam dokumen pindaian, termasuk berbagai bahasa dan aksara (seperti Latin, Mandarin, Jepang, Korea, dan Devanagari) saat Anda memilihnya. Deteksi bahasa untuk mode Otomatis juga dilakukan di perangkat Anda. Fitur-fitur ini disediakan menggunakan pustaka Google ML Kit, termasuk Pengenalan Teks dan Pemindai Dokumen, yang berjalan di perangkat Anda.</p>
+    <p>Saat Anda menggunakan fitur pemindaian dan OCR, pemrosesan gambar dan teks Anda sepenuhnya terjadi di perangkat Anda. ML Kit tidak mengirim gambar dokumen, teks OCR, atau hasil pengenalan Anda ke server Google, dan teks OCR yang dihasilkan dari dokumen Anda tersimpan secara lokal di perangkat Anda dan tidak dikirim ke server yang dioperasikan SmartScan.</p>
+    <p>Dari waktu ke waktu, ML Kit dapat menghubungi server Google untuk menerima perbaikan bug, model terbaru, dan informasi kompatibilitas akselerator perangkat keras. ML Kit juga mengirim metrik kinerja dan utilisasi anonim tentang API ML Kit di aplikasi ke Google. Google menggunakan data metrik ini untuk mengukur kinerja, men-debug, memelihara, dan meningkatkan API ML Kit serta mendeteksi penyalahgunaan, sebagaimana dijelaskan dalam Kebijakan Privasi Google.</p>
+    <p>Teknologi OCR terkadang dapat menghasilkan hasil yang salah. Verifikasikan informasi penting terhadap dokumen asli sebelum mengandalkan hasil OCR.</p>
+
+    <h2>4. Login Google</h2>
+    <p>Login Google digunakan untuk menghubungkan akun Google Anda ke SmartScan saat Anda memilih menggunakan Cadangan Google Drive.</p>
+    <p>Saat Anda login dengan Google, Google dapat memberikan ke SmartScan informasi akun dasar yang terkait dengan akun Google Anda, seperti nama, alamat email, informasi profil, dan pengenal akun Anda, tergantung izin yang diminta dan diberikan.</p>
+    <p>Informasi ini digunakan untuk mengautentikasi akun Google Anda dan menyediakan Cadangan Google Drive.</p>
+    <p>SmartScan tidak menanyakan kata sandi Google Anda.</p>
+    <p>Google menangani autentikasi melalui layanannya sendiri dan memproses informasi sesuai kebijakan privasi dan ketentuan Google yang berlaku.</p>
+
+    <h2>5. Cadangan Google Drive</h2>
+    <p>Cadangan Google Drive adalah fitur opsional.</p>
+    <p>Saat Anda memilih menggunakannya, SmartScan meminta izin mengakses Google Drive untuk mencadangkan atau mengelola file yang terkait dengan SmartScan.</p>
+    <p>Dokumen pilihan Anda dicadangkan ke akun Google Drive Anda sendiri.</p>
+    <p>SmartScan tidak mengoperasikan layanan penyimpanan cloud terpisah untuk dokumen Anda.</p>
+    <p>File yang disimpan melalui Google Drive tetap berada di bawah akun Google Anda dan tunduk pada kebijakan privasi, keamanan, dan layanan Google.</p>
+    <p>Anda dapat berhenti menggunakan Cadangan Google Drive atau menghapus akses SmartScan ke akun Google Anda melalui kontrol yang tersedia di SmartScan atau Akun Google Anda.</p>
+
+    <h2>6. Informasi yang Kami Terima Melalui Layanan Google</h2>
+    <p>SmartScan dapat menerima informasi terbatas yang diperlukan untuk menyediakan fitur terkait Google.</p>
+    <p>Tergantung fitur yang Anda gunakan, ini dapat mencakup:</p>
+    <ul>
+        <li>Informasi akun Google yang diperlukan untuk login.</li>
+        <li>Informasi yang diperlukan untuk mengidentifikasi akun Google Drive Anda.</li>
+        <li>Informasi tentang file dan folder cadangan SmartScan yang diperlukan untuk melakukan Cadangan Google Drive.</li>
+        <li>Informasi yang diperlukan untuk memproses pembelian Google Play.</li>
+    </ul>
+    <p>SmartScan tidak menggunakan dokumen Google Drive Anda atau isinya untuk periklanan.</p>
+
+    <h2>7. Periklanan</h2>
+    <p>Versi gratis SmartScan dapat menampilkan iklan yang disediakan oleh Google AdMob.</p>
+    <p>SmartScan tidak menggunakan isi dokumen pindaian atau teks OCR Anda untuk memilih iklan.</p>
+    <p>Informasi terkait periklanan dapat diproses oleh Google dan mitra periklanannya sesuai kebijakan mereka yang berlaku.</p>
+    <p>SmartScan mengikuti persyaratan Google Play yang berlaku untuk periklanan berdasarkan target audiens aplikasi yang dinyatakan.</p>
+    <p>Premium dapat menghapus iklan, tergantung fitur Premium yang ditawarkan di aplikasi.</p>
+
+    <h2>8. Analitik dan Pelaporan Kerusakan</h2>
+    <p>SmartScan dapat menggunakan layanan analitik dan pelaporan kerusakan dari Google untuk membantu kami memahami cara aplikasi digunakan, mengidentifikasi kerusakan, mendiagnosis masalah teknis, dan meningkatkan aplikasi.</p>
+    <p>Layanan ini dapat memproses informasi teknis seperti:</p>
+    <ul>
+        <li>Informasi perangkat dan sistem operasi.</li>
+        <li>Versi aplikasi.</li>
+        <li>Informasi kerusakan.</li>
+        <li>Informasi kinerja.</li>
+        <li>Informasi umum penggunaan aplikasi.</li>
+    </ul>
+    <p>SmartScan tidak menggunakan layanan ini untuk mengunggah atau menganalisis isi dokumen pindaian atau teks OCR Anda.</p>
+    <p>Informasi yang diproses layanan ini tunduk pada kebijakan yang berlaku dari penyedia layanan.</p>
+
+    <h2>9. Penagihan Google Play</h2>
+    <p>Jika SmartScan menawarkan fitur Premium berbayar, pembayaran diproses melalui Google Play.</p>
+    <p>SmartScan tidak menerima atau menyimpan kartu kredit, kartu debit, rekening bank, atau informasi kartu pembayaran lainnya.</p>
+    <p>Google Play menangani pemrosesan pembayaran serta prosedur pembelian dan pengembalian dana yang berlaku.</p>
+
+    <h2>10. Notifikasi</h2>
+    <p>SmartScan dapat menggunakan notifikasi untuk fitur seperti:</p>
+    <ul>
+        <li>Status cadangan.</li>
+        <li>Pengingat cadangan.</li>
+        <li>Pembaruan aplikasi.</li>
+        <li>Informasi lain terkait aplikasi.</li>
+    </ul>
+    <p>Anda dapat mengontrol izin notifikasi melalui pengaturan perangkat Android dan, jika tersedia, pengaturan SmartScan.</p>
+
+    <h2>11. Yang Tidak Dilakukan SmartScan</h2>
+    <p>SmartScan tidak:</p>
+    <ul>
+        <li>Menjual informasi pribadi Anda.</li>
+        <li>Menyewakan informasi pribadi Anda.</li>
+        <li>Menggunakan dokumen pindaian Anda untuk periklanan.</li>
+        <li>Menggunakan teks OCR Anda untuk periklanan.</li>
+        <li>Mengunggah dokumen Anda ke server cloud yang dioperasikan SmartScan.</li>
+        <li>Menyimpan dokumen Anda di database cloud yang dioperasikan SmartScan.</li>
+        <li>Membagikan dokumen pindaian Anda dengan pengiklan.</li>
+    </ul>
+    <p>Jika Anda memilih Cadangan Google Drive, dokumen pilihan Anda dikirim ke Google Drive karena Anda meminta pencadangan.</p>
+
+    <h2>12. Tempat Dokumen Anda Disimpan</h2>
+    <p>Dokumen Anda dapat berada di dua tempat:</p>
+    <p>Di perangkat Anda: pindaian asli dan informasi OCR Anda disimpan secara lokal oleh SmartScan.</p>
+    <p>Di Google Drive Anda: jika Anda mengaktifkan Cadangan Google Drive, dokumen pilihan juga dapat tersimpan di akun Google Drive Anda sendiri.</p>
+    <p>SmartScan tidak membuat salinan cloud terpisah dari dokumen Anda di luar layanan Google yang digunakan aplikasi.</p>
+
+    <h2>13. Pilihan Anda</h2>
+    <p>Anda dapat memilih apakah akan:</p>
+    <ul>
+        <li>Menggunakan Login Google.</li>
+        <li>Menggunakan Cadangan Google Drive.</li>
+        <li>Menyimpan dokumen hanya di perangkat Anda.</li>
+        <li>Mengaktifkan atau menonaktifkan notifikasi.</li>
+        <li>Membeli Premium.</li>
+        <li>Menghapus dokumen dari SmartScan.</li>
+        <li>Menghapus dokumen cadangan dari Google Drive Anda.</li>
+        <li>Menghapus akses SmartScan ke akun Google Anda.</li>
+    </ul>
+    <p>Anda mengontrol akun Google Drive Anda dan dapat mengelola file-nya melalui Google.</p>
+
+    <h2>14. Penghapusan Data</h2>
+    <p>SmartScan dirancang untuk menyimpan data dokumen di perangkat Anda atau di Google Drive Anda sendiri saat Anda memilih menggunakan cadangan.</p>
+    <p>Anda dapat menghapus dokumen yang tersimpan secara lokal menggunakan kontrol SmartScan yang tersedia.</p>
+    <p>Dokumen yang dicadangkan ke Google Drive dapat dihapus dari Google Drive Anda.</p>
+    <p>Jika SmartScan menyediakan akun atau fitur terkait akun, Anda dapat meminta penghapusan informasi akun yang terkait dengan fitur tersebut melalui opsi penghapusan akun di aplikasi atau melalui metode penghapusan akun eksternal yang disediakan pengembang.</p>
+    <p>Menghapus SmartScan dari perangkat Anda tidak otomatis menghapus file yang sebelumnya Anda cadangkan ke Google Drive. Kelola file tersebut melalui Google Drive.</p>
+
+    <h2>15. Penyimpanan Data</h2>
+    <p>SmartScan tidak memelihara database cloud sendiri yang berisi dokumen pindaian Anda.</p>
+    <p>Dokumen yang tersimpan secara lokal tetap berada di perangkat Anda hingga Anda menghapusnya, menghapus data aplikasi, mencopot pemasangan aplikasi, atau menghapusnya dengan cara lain.</p>
+    <p>Dokumen yang dicadangkan ke Google Drive tetap berada di Google Drive Anda hingga Anda menghapusnya atau hingga dihapus sesuai pengaturan Google Drive Anda.</p>
+    <p>Informasi yang diproses oleh layanan pihak ketiga seperti Login Google, Google Drive, Google AdMob, layanan analitik/pelaporan kerusakan, dan Google Play tunduk pada kebijakan penyimpanan masing-masing layanan tersebut.</p>
+
+    <h2>16. Keamanan</h2>
+    <p>SmartScan dirancang untuk meminimalkan pengumpulan informasi Anda yang tidak perlu.</p>
+    <p>Dokumen dan teks OCR Anda terutama diproses dan disimpan di perangkat Anda.</p>
+    <p>Saat Anda menggunakan Cadangan Google Drive, file Anda dikirim ke Google Drive menggunakan layanan Google.</p>
+    <p>Anda bertanggung jawab melindungi akses ke perangkat dan akun Google Anda, termasuk menggunakan keamanan perangkat yang sesuai dan menjaga keamanan kredensial akun Google Anda.</p>
+    <p>Tidak ada metode penyimpanan atau transmisi elektronik yang dapat dijamin sepenuhnya aman.</p>
+
+    <h2>17. Pengguna Berusia 13 Tahun ke Atas</h2>
+    <p>SmartScan ditujukan untuk pengguna berusia 13 tahun ke atas.</p>
+    <p>SmartScan tidak ditujukan untuk anak di bawah 13 tahun.</p>
+    <p>Jika Anda berusia di bawah 13 tahun, jangan gunakan SmartScan.</p>
+    <p>Target audiens aplikasi dinyatakan di bagian Target Audiens dan Konten Google Play. Google Play dapat menerapkan persyaratan tambahan tergantung audiens yang dinyatakan dan kebijakan yang berlaku.</p>
+
+    <h2>18. Layanan Pihak Ketiga</h2>
+    <p>SmartScan menggunakan layanan Google untuk menyediakan fitur tertentu.</p>
+    <p>Ini dapat mencakup:</p>
+    <ul>
+        <li>Login Google</li>
+        <li>Google Drive</li>
+        <li>Google ML Kit (Pengenalan Teks dan Pemindai Dokumen di perangkat, termasuk model bahasa untuk Latin, Mandarin, Jepang, Korea, dan Devanagari)</li>
+        <li>Google AdMob</li>
+        <li>Google Analytics dan/atau layanan pelaporan kerusakan</li>
+        <li>Penagihan Google Play</li>
+    </ul>
+    <p>Pemrosesan ML Kit dilakukan di perangkat Anda. Pemrosesan Google atas data metrik ML Kit dijelaskan di Bagian 3 dan dalam Kebijakan Privasi Google.</p>
+    <p>Layanan ini disediakan dan dikendalikan oleh Google dan dapat memproses informasi sesuai kebijakan privasi dan ketentuan mereka sendiri.</p>
+    <p>SmartScan tidak mengendalikan praktik privasi layanan pihak ketiga ini.</p>
+
+    <h2>19. Perubahan pada Kebijakan Privasi Ini</h2>
+    <p>Kami dapat memperbarui Kebijakan Privasi ini saat fitur, layanan, atau praktik privasi SmartScan berubah.</p>
+    <p>Saat kami membuat perubahan penting, kami akan memperbarui tanggal "Terakhir Diperbarui" di bagian bawah kebijakan ini dan, jika perlu, memberikan pemberitahuan tambahan melalui aplikasi.</p>
+
+    <h2>20. Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan, kekhawatiran, atau permintaan tentang Kebijakan Privasi ini atau praktik privasi SmartScan, hubungi:</p>
+    <p>Email: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Pengembang: AEnage Dev</p>
+    <p>Dengan menggunakan SmartScan, Anda mengakui bahwa Anda telah membaca dan memahami Kebijakan Privasi ini.</p>
+
+    <hr>
+    <p class="meta">Terakhir diperbarui: September 2026 &nbsp;|&nbsp; SmartScan Versi 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

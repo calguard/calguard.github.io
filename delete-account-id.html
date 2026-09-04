@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meminta Penghapusan Akun – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Meminta Penghapusan Akun</h1>
+
+    <p>SmartScan adalah aplikasi pemindai dokumen dan OCR oleh AEnage Dev yang membantu Anda memindai, mengatur, mencari, dan mencadangkan dokumen.</p>
+    <p>Halaman ini menjelaskan cara menghapus akun SmartScan Anda dan data yang terkait dengannya.</p>
+
+    <p class="meta">Ini adalah terjemahan dari halaman berbahasa Inggris, disediakan untuk kenyamanan Anda. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</p>
+
+    <h2>1. Apakah SmartScan Membuat Akun?</h2>
+    <p>SmartScan tidak membuat akun pengguna sendiri dan tidak menjalankan server yang menyimpan data akun.</p>
+    <p>SmartScan menawarkan Login Google opsional menggunakan akun Google Anda yang sudah ada. Login Google hanya digunakan untuk menyediakan Cadangan Google Drive dan fitur Google terkait.</p>
+    <p>Menghapus "akun" Anda dengan SmartScan berarti menghapus koneksi akun Google Anda ke SmartScan dan menghapus informasi yang disimpan SmartScan secara lokal di perangkat Anda.</p>
+
+    <h2>2. Hapus Akun Anda – Langkah demi Langkah</h2>
+    <p>Untuk menghapus akun SmartScan Anda dan data terkait, ikuti langkah berikut:</p>
+    <ul>
+        <li>Buka SmartScan dan buka Pengaturan.</li>
+        <li>Keluar dari akun Google Anda dari dalam SmartScan.</li>
+        <li>Buka Akun Google Anda, buka Keamanan, dan kelola akses pihak ketiga untuk menghapus SmartScan dari daftar aplikasi yang terhubung ke akun Google Anda.</li>
+        <li>Untuk menghapus informasi SmartScan yang tersimpan secara lokal, hapus data aplikasi atau copot pemasangan SmartScan dari perangkat Anda.</li>
+    </ul>
+
+    <h2>3. Apa yang Dihapus dan Apa yang Disimpan?</h2>
+    <p>Saat Anda menghapus akun menggunakan langkah di atas:</p>
+    <ul>
+        <li>Koneksi SmartScan ke akun Google Anda akan dihapus.</li>
+        <li>Informasi login yang tersimpan secara lokal, seperti nama, alamat email, dan foto profil Anda, akan dihapus saat Anda keluar, menghapus data aplikasi, atau mencopot pemasangan aplikasi.</li>
+        <li>Preferensi aplikasi dan dokumen yang tersimpan secara lokal akan dihapus saat Anda menghapus data aplikasi atau mencopot pemasangan aplikasi.</li>
+        <li>Dokumen yang sebelumnya Anda cadangkan ke akun Google Drive Anda sendiri tidak otomatis dihapus. Karena file tersebut berada di akun Google Anda, bukan di SmartScan, file tersebut tetap ada hingga Anda menghapusnya melalui Google Drive.</li>
+    </ul>
+
+    <h2>4. Minta Penghapusan dengan Menghubungi Kami</h2>
+    <p>Jika Anda tidak dapat menghapus akun menggunakan langkah di atas, atau jika Anda memiliki permintaan penghapusan lain, hubungi kami di: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> dan sertakan akun Google yang digunakan dengan SmartScan.</p>
+
+    <h2>5. Penyimpanan Data</h2>
+    <p>SmartScan tidak memelihara server atau database cloud sendiri yang berisi informasi akun Anda.</p>
+    <p>Informasi yang diproses oleh layanan pihak ketiga seperti Login Google, Google Drive, Google AdMob, layanan analitik/pelaporan kerusakan, dan Google Play tunduk pada kebijakan penyimpanan masing-masing layanan tersebut.</p>
+
+    <h2>6. Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan tentang menghapus akun Anda atau tentang halaman ini, hubungi:</p>
+    <p>Email: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Pengembang: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Terakhir diperbarui: Juli 2026 &nbsp;|&nbsp; SmartScan Versi 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

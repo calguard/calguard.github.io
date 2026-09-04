@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meminta Penghapusan Data – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Meminta Penghapusan Data</h1>
+
+    <p>SmartScan adalah aplikasi pemindai dokumen dan OCR yang membantu Anda memindai, mengatur, mencari, dan mencadangkan dokumen.</p>
+    <p>Halaman ini menjelaskan cara menghapus data SmartScan Anda. SmartScan menyimpan dokumen Anda di perangkat Anda dan, hanya jika Anda memilih Cadangan Google Drive, di akun Google Drive Anda sendiri. SmartScan tidak mengoperasikan penyimpanan cloud sendiri atau server backend untuk dokumen Anda.</p>
+
+    <p class="meta">Ini adalah terjemahan dari halaman berbahasa Inggris, disediakan untuk kenyamanan Anda. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</p>
+
+    <h2>1. Data Apa yang Disimpan SmartScan?</h2>
+    <p>Sebagian besar data SmartScan milik Anda dan berada di salah satu dari dua tempat:</p>
+    <ul>
+        <li>Di perangkat Anda: gambar dokumen pindaian, teks OCR, indeks pencarian, preferensi aplikasi, dan informasi login yang tersimpan secara lokal.</li>
+        <li>Di Google Drive Anda: jika Anda mengaktifkan Cadangan Google Drive, dokumen pilihan yang Anda cadangkan tersimpan di akun Google Drive Anda sendiri.</li>
+    </ul>
+    <p>SmartScan tidak menjalankan server yang menyimpan dokumen atau teks OCR Anda.</p>
+
+    <h2>2. Menghapus Dokumen yang Tersimpan di Perangkat Anda</h2>
+    <p>Untuk menghapus dokumen beserta teks OCR-nya dari perangkat Anda:</p>
+    <ul>
+        <li>Buka SmartScan dan buka tab File.</li>
+        <li>Pilih dokumen atau dokumen yang ingin Anda hapus.</li>
+        <li>Gunakan opsi hapus untuk menghapusnya.</li>
+    </ul>
+    <p>Untuk menghapus semua data SmartScan dari perangkat Anda sekaligus, Anda juga dapat:</p>
+    <ul>
+        <li>Membuka Pengaturan perangkat Android Anda, membuka Aplikasi, memilih SmartScan, lalu memilih Hapus penyimpanan atau Hapus data, atau</li>
+        <li>Mencopot pemasangan SmartScan.</li>
+    </ul>
+    <p>Menghapus data aplikasi atau mencopot pemasangannya akan menghapus dokumen yang tersimpan secara lokal, teks OCR, informasi login, dan preferensi aplikasi dari perangkat Anda.</p>
+
+    <h2>3. Menghapus Dokumen yang Dicadangkan ke Google Drive</h2>
+    <p>Jika Anda menggunakan Cadangan Google Drive, dokumen cadangan Anda tersimpan di akun Google Drive Anda sendiri. Menghapus SmartScan dari perangkat Anda tidak menghapus file ini.</p>
+    <p>Untuk menghapus dokumen cadangan:</p>
+    <ul>
+        <li>Buka folder cadangan SmartScan di Google Drive Anda, atau</li>
+        <li>Buka SmartScan, buka tab Cloud, dan hapus file dari sana.</li>
+    </ul>
+    <p>Karena file ini berada di akun Google Drive Anda, Anda dapat mengelola atau menghapusnya secara permanen melalui Google Drive Anda.</p>
+
+    <h2>4. Menghapus Akses SmartScan ke Akun Google Anda</h2>
+    <p>Untuk menghentikan SmartScan mengakses akun Google Anda:</p>
+    <ul>
+        <li>Buka SmartScan, buka Pengaturan, dan keluar, atau</li>
+        <li>Buka Akun Google Anda, buka Keamanan, dan kelola akses pihak ketiga untuk menghapus SmartScan.</li>
+    </ul>
+
+    <h2>5. Meminta Penghapusan Tambahan</h2>
+    <p>SmartScan tidak mengoperasikan server cloud sendiri, jadi tidak ada dokumen atau data pribadi yang tersimpan di server yang dioperasikan SmartScan untuk dihapus.</p>
+    <p>Jika Anda memiliki permintaan penghapusan yang tidak tercakup dalam langkah di atas, hubungi kami di: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> dan sertakan permintaan Anda serta akun Google yang digunakan dengan SmartScan (jika ada).</p>
+
+    <h2>6. Apa yang Dihapus dan Apa yang Disimpan?</h2>
+    <p>Saat Anda menghapus data menggunakan langkah di atas:</p>
+    <ul>
+        <li>Dokumen, gambar, dan teks OCR yang tersimpan di perangkat Anda akan dihapus.</li>
+        <li>Informasi login yang tersimpan secara lokal (seperti nama dan alamat email Anda) akan dihapus.</li>
+        <li>Preferensi aplikasi dan indeks pencarian akan dihapus.</li>
+        <li>Dokumen cadangan di Google Drive Anda sendiri tidak otomatis dihapus. Dokumen tersebut tetap berada di Google Drive Anda hingga Anda menghapusnya, karena berada di akun Anda, bukan di SmartScan.</li>
+    </ul>
+
+    <h2>7. Penyimpanan Data</h2>
+    <p>SmartScan tidak memelihara database cloud sendiri yang berisi dokumen pindaian Anda.</p>
+    <p>Dokumen yang tersimpan secara lokal tetap berada di perangkat Anda hingga Anda menghapusnya, menghapus data aplikasi, atau mencopot pemasangan aplikasi.</p>
+    <p>Dokumen yang dicadangkan ke Google Drive tetap berada di Google Drive Anda hingga Anda menghapusnya atau hingga dihapus sesuai pengaturan Google Drive Anda.</p>
+    <p>Informasi yang diproses oleh layanan pihak ketiga seperti Login Google, Google Drive, Google AdMob, layanan analitik/pelaporan kerusakan, dan Google Play tunduk pada kebijakan penyimpanan masing-masing layanan tersebut.</p>
+
+    <h2>8. Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan tentang menghapus data Anda atau tentang halaman ini, hubungi:</p>
+    <p>Email: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Pengembang: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Terakhir diperbarui: Juli 2026 &nbsp;|&nbsp; SmartScan Versi 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

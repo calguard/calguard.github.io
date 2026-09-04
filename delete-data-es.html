@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar eliminación de datos – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Solicitar eliminación de datos</h1>
+
+    <p>SmartScan es una aplicación de escaneo de documentos y OCR que te ayuda a escanear, organizar, buscar y respaldar tus documentos.</p>
+    <p>Esta página explica cómo eliminar tus datos de SmartScan. SmartScan almacena tus documentos en tu dispositivo y, solo si eliges la copia de seguridad de Google Drive, en tu propia cuenta de Google Drive. SmartScan no opera su propio almacenamiento en la nube ni servidor para tus documentos.</p>
+
+    <p class="meta">Esta es una traducción de la página en inglés, proporcionada para tu comodidad. En caso de diferencias, prevalece la versión en inglés.</p>
+
+    <h2>1. ¿Qué datos almacena SmartScan?</h2>
+    <p>La mayoría de los datos de SmartScan te pertenecen y están en uno de dos lugares:</p>
+    <ul>
+        <li>En tu dispositivo: imágenes de documentos escaneados, texto OCR, índice de búsqueda, preferencias de la app e información de inicio de sesión almacenada localmente.</li>
+        <li>En tu Google Drive: si activas la copia de seguridad de Google Drive, los documentos seleccionados que eliges respaldar se almacenan en tu propia cuenta de Google Drive.</li>
+    </ul>
+    <p>SmartScan no opera un servidor que almacene tus documentos ni tu texto OCR.</p>
+
+    <h2>2. Eliminar documentos almacenados en tu dispositivo</h2>
+    <p>Para eliminar documentos y su texto OCR de tu dispositivo:</p>
+    <ul>
+        <li>Abre SmartScan y ve a la pestaña Archivos.</li>
+        <li>Selecciona el documento o documentos que quieres eliminar.</li>
+        <li>Usa la opción de eliminar para quitarlos.</li>
+    </ul>
+    <p>Para eliminar todos los datos de SmartScan de tu dispositivo de una vez, también puedes:</p>
+    <ul>
+        <li>Abrir los Ajustes de tu dispositivo Android, ir a Aplicaciones, seleccionar SmartScan y elegir Borrar almacenamiento o Borrar datos, o</li>
+        <li>Desinstalar SmartScan.</li>
+    </ul>
+    <p>Borrar los datos de la app o desinstalarla elimina del dispositivo los documentos almacenados localmente, el texto OCR, la información de inicio de sesión y las preferencias de la app.</p>
+
+    <h2>3. Eliminar documentos respaldados en Google Drive</h2>
+    <p>Si usaste la copia de seguridad de Google Drive, tus documentos respaldados están en tu propia cuenta de Google Drive. Eliminar SmartScan de tu dispositivo no elimina estos archivos.</p>
+    <p>Para eliminar documentos respaldados:</p>
+    <ul>
+        <li>Abre la carpeta de respaldo de SmartScan en tu Google Drive, o</li>
+        <li>Abre SmartScan, ve a la pestaña Nube y elimina los archivos desde allí.</li>
+    </ul>
+    <p>Como estos archivos están en tu cuenta de Google Drive, puedes gestionarlos o eliminarlos permanentemente a través de tu Google Drive.</p>
+
+    <h2>4. Quitar el acceso de SmartScan a tu cuenta de Google</h2>
+    <p>Para impedir que SmartScan acceda a tu cuenta de Google:</p>
+    <ul>
+        <li>Abre SmartScan, ve a Ajustes y cierra sesión, o</li>
+        <li>Abre tu cuenta de Google, ve a Seguridad y gestiona el acceso de terceros para quitar SmartScan.</li>
+    </ul>
+
+    <h2>5. Solicitar una eliminación adicional</h2>
+    <p>SmartScan no opera su propio servidor en la nube, así que no hay documentos ni datos personales almacenados en un servidor operado por SmartScan para eliminar.</p>
+    <p>Si tienes una solicitud de eliminación no cubierta por los pasos anteriores, contáctanos en: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> e incluye tu solicitud y la cuenta de Google usada con SmartScan (si la hay).</p>
+
+    <h2>6. ¿Qué se elimina y qué se conserva?</h2>
+    <p>Cuando eliminas tus datos con los pasos anteriores:</p>
+    <ul>
+        <li>Se eliminan los documentos, imágenes y texto OCR almacenados en tu dispositivo.</li>
+        <li>Se elimina la información de inicio de sesión almacenada localmente (como tu nombre y dirección de correo).</li>
+        <li>Se eliminan las preferencias de la app y el índice de búsqueda.</li>
+        <li>Los documentos respaldados en tu propio Google Drive no se eliminan automáticamente. Permanecen en tu Google Drive hasta que los elimines, porque están en tu cuenta, no en SmartScan.</li>
+    </ul>
+
+    <h2>7. Retención de datos</h2>
+    <p>SmartScan no mantiene su propia base de datos en la nube con tus documentos escaneados.</p>
+    <p>Los documentos almacenados localmente permanecen en tu dispositivo hasta que los elimines, borres los datos de la aplicación o desinstales la aplicación.</p>
+    <p>Los documentos respaldados en Google Drive permanecen en tu Google Drive hasta que los elimines o se quiten según tus ajustes de Google Drive.</p>
+    <p>La información procesada por servicios de terceros como el inicio de sesión con Google, Google Drive, Google AdMob, servicios de analítica/informes de fallos y Google Play está sujeta a las políticas de retención respectivas de esos servicios.</p>
+
+    <h2>8. Contacto</h2>
+    <p>Si tienes preguntas sobre cómo eliminar tus datos o sobre esta página, contacta a:</p>
+    <p>Correo: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Desarrollador: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">Última actualización: julio de 2026 &nbsp;|&nbsp; SmartScan versión 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>プライバシーポリシー</h1>
+
+    <p>SmartScanは、書類のスキャン・整理・検索・バックアップを手伝うドキュメントスキャン＆OCRアプリです。</p>
+
+    <p>このプライバシーポリシーでは、SmartScanがアクセスする情報、その使い方、情報の保存場所、そしてあなたの選択肢について説明します。</p>
+
+    <p>わかりやすいよう、やさしい言葉で書いています。</p>
+
+    <p class="meta">これは英語版プライバシーポリシーの翻訳であり、便宜のために提供しています。内容に差異がある場合は英語版が優先されます。</p>
+
+    <h2>1. あなたの書類</h2>
+    <p>スキャンした書類はあなたのデバイスに保存されます。</p>
+    <p>SmartScanは、書類保存のための自社クラウドストレージやバックエンドサーバーを運営していません。</p>
+    <p>書類の画像とOCRテキストは、Googleドライブバックアップを使う場合を除き、あなたのデバイスに残ります。</p>
+    <p>Googleドライブバックアップを有効にすると、SmartScanはあなたのGoogleアカウントとGoogleドライブを使い、選択した書類をあなた自身のGoogleドライブアカウントにバックアップします。</p>
+
+    <h2>2. カメラ</h2>
+    <p>SmartScanは、書類をスキャンするときにデバイスのカメラを使います。</p>
+    <p>カメラは、スキャンと処理のために書類を撮影するために使います。</p>
+    <p>SmartScanがカメラで記録し続けたり監視したりすることはありません。</p>
+    <p>カメラへのアクセスは、スキャンに必要なときにだけ使います。</p>
+    <p>デバイスのギャラリーにある写真をスキャンページとして取り込む場合、SmartScanは選択した写真だけを読み取って処理します（新しいスキャンと同じ扱いです）。他の目的に使うことは決してありません。</p>
+
+    <h2>3. OCRと文字認識</h2>
+    <p>SmartScanはOCR（光学文字認識）でスキャン書類の文字を読み取ります。選択すれば、ラテン文字・中国語・日本語・韓国語・デーバナーガリーなど複数の言語と文字に対応します。自動モードの言語判定もあなたのデバイスで行われます。これらの機能はGoogle ML Kitライブラリ（テキスト認識とドキュメントスキャナー）によるもので、あなたのデバイス上で動作します。</p>
+    <p>スキャンとOCR機能を使うとき、画像とテキストの処理はすべてあなたのデバイスで完結します。ML Kitが書類の画像・OCRテキスト・認識結果をGoogleのサーバーに送ることはありません。書類から生成されたOCRテキストはデバイスにローカル保存され、SmartScan運営のサーバーに送られることはありません。</p>
+    <p>ML Kitは、不具合修正・更新モデル・ハードウェアアクセラレータ互換性情報の受け取りのため、随時Googleサーバーに接続することがあります。また、アプリ内ML Kit APIに関する匿名のパフォーマンス・利用メトリクスをGoogleに送信します。Googleはこのメトリクスデータを、パフォーマンス測定・デバッグ・保守・ML Kit API改善や不正利用の検出に使います。詳しくはGoogleのプライバシーポリシーをご覧ください。</p>
+    <p>OCR技術はときどき間違った結果を出すことがあります。OCR結果をあてにする前に、大切な情報は元の書類で確認してください。</p>
+
+    <h2>4. Googleサインイン</h2>
+    <p>Googleドライブバックアップを使うときに、GoogleアカウントをSmartScanに接続するためGoogleサインインを使います。</p>
+    <p>Googleでサインインすると、要求・許可された権限に応じて、氏名・メールアドレス・プロフィール情報・アカウント識別子などの基本的なアカウント情報がGoogleからSmartScanに提供される場合があります。</p>
+    <p>この情報は、Googleアカウントの認証とGoogleドライブバックアップの提供に使います。</p>
+    <p>SmartScanがGoogleのパスワードを尋ねることはありません。</p>
+    <p>認証はGoogle自身のサービスで行われ、情報はGoogleの適用されるプライバシーポリシーと規約に従って処理されます。</p>
+
+    <h2>5. Googleドライブバックアップ</h2>
+    <p>Googleドライブバックアップはオプション機能です。</p>
+    <p>使う場合は、SmartScan関連ファイルのバックアップや管理のためにGoogleドライブへのアクセス許可を求めます。</p>
+    <p>選択した書類はあなた自身のGoogleドライブアカウントにバックアップされます。</p>
+    <p>SmartScanは書類のための独自クラウドストレージサービスを運営していません。</p>
+    <p>Googleドライブに保存されたファイルはあなたのGoogleアカウントの管理下にあり、Googleのプライバシー・セキュリティ・サービスポリシーが適用されます。</p>
+    <p>SmartScan内の操作やGoogleアカウントから、Googleドライブバックアップの利用停止やSmartScanのアクセス削除ができます。</p>
+
+    <h2>6. Googleサービス経由で受け取る情報</h2>
+    <p>SmartScanは、Google関連機能の提供に必要な限られた情報を受け取ることがあります。</p>
+    <p>使う機能によって、以下が含まれる場合があります：</p>
+    <ul>
+        <li>サインインに必要なGoogleアカウント情報。</li>
+        <li>Googleドライブアカウントの特定に必要な情報。</li>
+        <li>Googleドライブバックアップの実行に必要なSmartScanバックアップファイル・フォルダの情報。</li>
+        <li>Google Play購入の処理に必要な情報。</li>
+    </ul>
+    <p>SmartScanは、Googleドライブの書類やその内容を広告に使いません。</p>
+
+    <h2>7. 広告</h2>
+    <p>SmartScan無料版ではGoogle AdMob提供の広告が表示されることがあります。</p>
+    <p>スキャン書類の内容やOCRテキストを広告の選択に使うことはありません。</p>
+    <p>広告関連の情報は、Googleとその広告パートナーの適用ポリシーに従って処理される場合があります。</p>
+    <p>SmartScanは、申告した対象年齢層に基づくGoogle Playの広告要件を守っています。</p>
+    <p>プレミアムでは、アプリ内提供のプレミアム機能に応じて広告が除去される場合があります。</p>
+
+    <h2>8. 分析とクラッシュレポート</h2>
+    <p>SmartScanは、利用状況の把握・クラッシュ特定・技術的問題の診断・アプリ改善のため、Google提供の分析・クラッシュレポートサービスを使うことがあります。</p>
+    <p>これらのサービスは次のような技術情報を処理する場合があります：</p>
+    <ul>
+        <li>デバイスとOSの情報。</li>
+        <li>アプリのバージョン。</li>
+        <li>クラッシュ情報。</li>
+        <li>パフォーマンス情報。</li>
+        <li>一般的なアプリ利用情報。</li>
+    </ul>
+    <p>SmartScanは、これらのサービスをスキャン書類やOCRテキストの内容のアップロード・分析には使いません。</p>
+    <p>これらのサービスが処理する情報には、各サービス提供者の適用ポリシーが適用されます。</p>
+
+    <h2>9. Google Play決済</h2>
+    <p>SmartScanが購入可能なプレミアム機能を提供する場合、お支払いはGoogle Playで処理されます。</p>
+    <p>SmartScanはクレジットカード・デビットカード・銀行口座などの決済カード情報を受け取ったり保存したりしません。</p>
+    <p>決済処理と購入・返金の手続きはGoogle Playが行います。</p>
+
+    <h2>10. 通知</h2>
+    <p>SmartScanは次のような機能のために通知を使うことがあります：</p>
+    <ul>
+        <li>バックアップ状況。</li>
+        <li>バックアップのリマインダー。</li>
+        <li>アプリの更新。</li>
+        <li>その他のアプリ関連情報。</li>
+    </ul>
+    <p>通知の許可はAndroidデバイスの設定やSmartScanの設定（ある場合）で管理できます。</p>
+
+    <h2>11. SmartScanがしないこと</h2>
+    <p>SmartScanは次のことをしません：</p>
+    <ul>
+        <li>個人情報を売ること。</li>
+        <li>個人情報を貸すこと。</li>
+        <li>スキャン書類を広告に使うこと。</li>
+        <li>OCRテキストを広告に使うこと。</li>
+        <li>書類をSmartScan運営のクラウドサーバーにアップロードすること。</li>
+        <li>書類をSmartScan運営のクラウドデータベースに保存すること。</li>
+        <li>スキャン書類を広告主に共有すること。</li>
+    </ul>
+    <p>Googleドライブバックアップを選んだ場合、選択した書類はバックアップ要求に応じてGoogleドライブに送られます。</p>
+
+    <h2>12. 書類の保存場所</h2>
+    <p>書類は2か所に存在する場合があります：</p>
+    <p>デバイス上：元のスキャンとOCR情報はSmartScanがローカルに保存します。</p>
+    <p>Googleドライブ上：Googleドライブバックアップを有効にすると、選択した書類はあなた自身のGoogleドライブアカウントにも保存される場合があります。</p>
+    <p>SmartScanは、アプリが使うGoogleサービス以外に書類の別クラウドコピーを作りません。</p>
+
+    <h2>13. あなたの選択</h2>
+    <p>次を選べます：</p>
+    <ul>
+        <li>Googleサインインを使うかどうか。</li>
+        <li>Googleドライブバックアップを使うかどうか。</li>
+        <li>書類をデバイスだけに保存するかどうか。</li>
+        <li>通知のオン・オフ。</li>
+        <li>プレミアムの購入。</li>
+        <li>SmartScanからの書類の削除。</li>
+        <li>Googleドライブからのバックアップ済み書類の削除。</li>
+        <li>GoogleアカウントへのSmartScanのアクセス削除。</li>
+    </ul>
+    <p>Googleドライブアカウントはあなたが管理し、ファイルはGoogle経由で管理できます。</p>
+
+    <h2>14. データの削除</h2>
+    <p>SmartScanは、書類データをデバイス上、またはバックアップ利用時はあなた自身のGoogleドライブに保つ設計です。</p>
+    <p>ローカル保存の書類はSmartScanの操作で削除できます。</p>
+    <p>Googleドライブにバックアップした書類はGoogleドライブから削除できます。</p>
+    <p>SmartScanがアカウントやアカウント関連機能を提供する場合、その機能に紐づくアカウント情報の削除を、アプリ内のアカウント削除オプションや開発者が提供する外部のアカウント削除方法で請求できます。</p>
+    <p>デバイスからSmartScanを削除しても、以前Googleドライブにバックアップしたファイルは自動で削除されません。Googleドライブで管理してください。</p>
+
+    <h2>15. データの保持</h2>
+    <p>SmartScanは、スキャン書類を含む自社クラウドデータベースを持っていません。</p>
+    <p>ローカル保存の書類は、削除・アプリデータの消去・アンインストール・その他の除去までデバイスに残ります。</p>
+    <p>Googleドライブにバックアップした書類は、削除されるかGoogleドライブ設定に従って除去されるまで残ります。</p>
+    <p>Googleサインイン・Googleドライブ・Google AdMob・分析／クラッシュレポートサービス・Google Playなど第三者サービスが処理する情報には、各サービスの保持ポリシーが適用されます。</p>
+
+    <h2>16. セキュリティ</h2>
+    <p>SmartScanは、情報の不必要な収集を最小限にする設計です。</p>
+    <p>書類とOCRテキストは主にデバイス上で処理・保存されます。</p>
+    <p>Googleドライブバックアップを使う場合、ファイルはGoogleのサービス経由でGoogleドライブに送信されます。</p>
+    <p>デバイスとGoogleアカウントへのアクセス保護（適切なデバイスセキュリティやGoogleアカウント認証情報の管理を含む）はあなたの責任です。</p>
+    <p>いかなる電子的保存・送信方法も完全な安全は保証できません。</p>
+
+    <h2>17. 13歳以上の利用者</h2>
+    <p>SmartScanは13歳以上の利用者を対象としています。</p>
+    <p>SmartScanは13歳未満の子どもを対象としていません。</p>
+    <p>13歳未満の方はSmartScanを使わないでください。</p>
+    <p>アプリの対象年齢層はGoogle Playの対象年齢・コンテンツ欄で申告しています。申告内容と適用ポリシーによりGoogle Playが追加要件を適用する場合があります。</p>
+
+    <h2>18. 第三者サービス</h2>
+    <p>SmartScanは一部の機能にGoogleサービスを使っています。</p>
+    <p>以下が含まれる場合があります：</p>
+    <ul>
+        <li>Googleサインイン</li>
+        <li>Googleドライブ</li>
+        <li>Google ML Kit（デバイス上のテキスト認識とドキュメントスキャナー。ラテン文字・中国語・日本語・韓国語・デーバナーガリー用言語モデルを含む）</li>
+        <li>Google AdMob</li>
+        <li>Googleアナリティクスやクラッシュレポートサービス</li>
+        <li>Google Play決済</li>
+    </ul>
+    <p>ML Kitの処理はあなたのデバイスで行われます。GoogleによるML Kitメトリクスデータの処理はセクション3とGoogleのプライバシーポリシーで説明しています。</p>
+    <p>これらのサービスはGoogleが提供・管理し、独自のプライバシーポリシーと規約に従って情報を処理する場合があります。</p>
+    <p>SmartScanはこれら第三者サービスのプライバシー慣行を管理していません。</p>
+
+    <h2>19. このプライバシーポリシーの変更</h2>
+    <p>SmartScanの機能・サービス・プライバシー慣行が変わったとき、このプライバシーポリシーを更新することがあります。</p>
+    <p>重要な変更の際は、このポリシー末尾の「最終更新」日を更新し、適宜アプリ内でも追加でお知らせします。</p>
+
+    <h2>20. お問い合わせ</h2>
+    <p>このプライバシーポリシーやSmartScanのプライバシー慣行について質問・懸念・要望がある場合は、こちらにご連絡ください：</p>
+    <p>メール：<span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>開発者：AEnage Dev</p>
+    <p>SmartScanを使うことで、このプライバシーポリシーを読み理解したものとみなされます。</p>
+
+    <hr>
+    <p class="meta">最終更新：2026年9月 &nbsp;|&nbsp; SmartScanバージョン 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

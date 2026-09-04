@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>डेटा हटाने का अनुरोध – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>डेटा हटाने का अनुरोध</h1>
+
+    <p>SmartScan एक दस्तावेज़ स्कैनिंग और OCR ऐप है जो आपके दस्तावेज़ों को स्कैन, व्यवस्थित, खोजने और बैकअप करने में मदद करता है।</p>
+    <p>यह पेज बताता है कि SmartScan डेटा कैसे हटाएँ। SmartScan आपके दस्तावेज़ आपके डिवाइस पर रखता है और केवल Google Drive Backup चुनने पर आपके अपने Google Drive खाते में रखता है। SmartScan आपके दस्तावेज़ों के लिए अपना क्लाउड स्टोरेज या बैकएंड सर्वर नहीं चलाता।</p>
+
+    <p class="meta">यह अंग्रेज़ी पेज का अनुवाद है, आपकी सुविधा के लिए दिया गया है। मतभेद होने पर अंग्रेज़ी संस्करण मान्य होगा।</p>
+
+    <h2>1. SmartScan कौन-सा डेटा रखता है?</h2>
+    <p>ज़्यादातर SmartScan डेटा आपका है और दो में से एक जगह है:</p>
+    <ul>
+        <li>आपके डिवाइस पर: स्कैन किए दस्तावेज़ों की तस्वीरें, OCR टेक्स्ट, खोज सूची, ऐप पसंद और स्थानीय रखी साइन-इन जानकारी।</li>
+        <li>आपके Google Drive में: Google Drive Backup चालू करने पर जिन दस्तावेज़ों का बैकअप चुनते हैं, वे आपके अपने Google Drive खाते में रखे जाते हैं।</li>
+    </ul>
+    <p>SmartScan आपके दस्तावेज़ या OCR टेक्स्ट रखने वाला सर्वर नहीं चलाता।</p>
+
+    <h2>2. डिवाइस पर रखे दस्तावेज़ हटाएँ</h2>
+    <p>डिवाइस से दस्तावेज़ और उनका OCR टेक्स्ट हटाने के लिए:</p>
+    <ul>
+        <li>SmartScan खोलें और Files टैब पर जाएँ।</li>
+        <li>हटाने वाला दस्तावेज़ या दस्तावेज़ चुनें।</li>
+        <li>हटाने के विकल्प से उन्हें हटाएँ।</li>
+    </ul>
+    <p>डिवाइस से सारा SmartScan डेटा एक बार में हटाने के लिए आप यह भी कर सकते हैं:</p>
+    <ul>
+        <li>Android डिवाइस की Settings खोलें, Apps पर जाएँ, SmartScan चुनें, और Clear storage या Clear data चुनें, या</li>
+        <li>SmartScan अनइंस्टॉल करें।</li>
+    </ul>
+    <p>ऐप डेटा साफ़ करने या ऐप हटाने पर स्थानीय रखे दस्तावेज़, OCR टेक्स्ट, साइन-इन जानकारी और ऐप पसंद डिवाइस से हट जाते हैं।</p>
+
+    <h2>3. Google Drive में बैकअप दस्तावेज़ हटाएँ</h2>
+    <p>Google Drive Backup इस्तेमाल किया था तो बैकअप दस्तावेज़ आपके अपने Google Drive खाते में हैं। डिवाइस से SmartScan हटाने पर ये फ़ाइलें नहीं हटतीं।</p>
+    <p>बैकअप दस्तावेज़ हटाने के लिए:</p>
+    <ul>
+        <li>Google Drive में SmartScan बैकअप फ़ोल्डर खोलें, या</li>
+        <li>SmartScan खोलें, Cloud टैब पर जाएँ और वहाँ से फ़ाइलें हटाएँ।</li>
+    </ul>
+    <p>ये फ़ाइलें आपके Google Drive खाते में हैं, इसलिए Google Drive से संभालें या हमेशा के लिए हटाएँ।</p>
+
+    <h2>4. Google खाते से SmartScan की पहुँच हटाएँ</h2>
+    <p>SmartScan की Google खाते तक पहुँच रोकने के लिए:</p>
+    <ul>
+        <li>SmartScan खोलें, Settings पर जाएँ और साइन आउट करें, या</li>
+        <li>Google खाता खोलें, Security पर जाएँ और third-party access संभालकर SmartScan हटाएँ।</li>
+    </ul>
+
+    <h2>5. और हटाने का अनुरोध</h2>
+    <p>SmartScan अपना क्लाउड सर्वर नहीं चलाता, इसलिए SmartScan द्वारा चलाए सर्वर पर हटाने लायक दस्तावेज़ या निजी डेटा नहीं है।</p>
+    <p>ऊपर के चरणों से न होने वाले हटाने के अनुरोध पर संपर्क करें: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span> और अनुरोध व SmartScan के साथ इस्तेमाल Google खाता (यदि हो) लिखें।</p>
+
+    <h2>6. क्या हटता है और क्या रहता है?</h2>
+    <p>ऊपर के चरणों से डेटा हटाने पर:</p>
+    <ul>
+        <li>डिवाइस पर रखे दस्तावेज़, तस्वीरें और OCR टेक्स्ट हट जाते हैं।</li>
+        <li>स्थानीय रखी साइन-इन जानकारी (जैसे नाम और ईमेल पता) हट जाती है।</li>
+        <li>ऐप पसंद और खोज सूची हट जाती है।</li>
+        <li>अपने Google Drive में बैकअप दस्तावेज़ अपने आप नहीं हटते। आपके हटाने तक Google Drive में रहते हैं, क्योंकि वे आपके खाते में हैं, SmartScan में नहीं।</li>
+    </ul>
+
+    <h2>7. डेटा रखना</h2>
+    <p>SmartScan आपके स्कैन किए दस्तावेज़ों वाला अपना क्लाउड डेटाबेस नहीं रखता।</p>
+    <p>स्थानीय रखे दस्तावेज़ आपके हटाने, ऐप्लिकेशन डेटा साफ़ करने या ऐप हटाने तक डिवाइस पर रहते हैं।</p>
+    <p>Google Drive में बैकअप दस्तावेज़ आपके हटाने या Google Drive सेटिंग के अनुसार हटने तक रहते हैं।</p>
+    <p>Google साइन-इन, Google Drive, Google AdMob, विश्लेषण/क्रैश-रिपोर्टिंग सेवाओं और Google Play जैसी तृतीय-पक्ष सेवाओं से प्रोसेस जानकारी उन सेवाओं की अपनी रखने की नीतियों के अधीन है।</p>
+
+    <h2>8. संपर्क</h2>
+    <p>डेटा हटाने या इस पेज पर प्रश्न हों तो संपर्क करें:</p>
+    <p>ईमेल: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>डेवलपर: AEnage Dev</p>
+
+    <hr>
+    <p class="meta">अंतिम अपडेट: जुलाई 2026 &nbsp;|&nbsp; SmartScan संस्करण 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Serviço – SmartScan</title>
+    <script>
+        const params = new URLSearchParams(location.search)
+        if (params.get('app') === '1') {
+            document.documentElement.classList.add('in-app')
+            document.documentElement.classList.add(params.get('theme') === 'dark' ? 'theme-dark' : 'theme-light')
+        } else {
+            document.documentElement.classList.add(
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light'
+            )
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        body { background: #F5F6F8; color: #1A1C1A; }
+        h1 { color: #607AFB; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .meta { color: #94A3B8; font-size: 12px; margin-bottom: 24px; }
+        h2 { color: #607AFB; font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; color: #414942; font-size: 15px; }
+        ul { margin: 6px 0 14px 20px; }
+        li { margin-bottom: 4px; color: #414942; font-size: 15px; }
+        a { color: #607AFB; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 24px 0; }
+        .theme-dark body { background: #0F1323; color: #E2E8F0; }
+        .theme-dark h1 { color: #8094FF; }
+        .theme-dark h2 { color: #8094FF; }
+        .theme-dark p, .theme-dark li { color: #94A3B8; }
+        .theme-dark .meta { color: #64748B; }
+        .theme-dark hr { border-color: #334155; }
+    </style>
+</head>
+<body>
+    <h1>Termos de Serviço</h1>
+
+    <p>Bem-vindo ao SmartScan.</p>
+    <p>Estes Termos de Serviço explicam as regras e condições de uso do SmartScan.</p>
+    <p>Ao instalar ou usar o SmartScan, você concorda com estes Termos. Se não concorda com estes Termos, não use o aplicativo.</p>
+
+    <p class="meta">Esta é uma tradução dos Termos de Serviço em inglês, fornecida para sua comodidade. Em caso de divergência, prevalece a versão em inglês.</p>
+
+    <h2>1. Sobre o SmartScan</h2>
+    <p>O SmartScan é um aplicativo de digitalização de documentos e OCR.</p>
+    <p>Dependendo dos recursos disponíveis na sua versão do aplicativo, o SmartScan pode permitir que você:</p>
+    <ul>
+        <li>Digitalize documentos com a câmera do seu dispositivo.</li>
+        <li>Processe documentos com OCR.</li>
+        <li>Extraia e pesquise texto de documentos digitalizados.</li>
+        <li>Armazene documentos no seu dispositivo.</li>
+        <li>Faça backup de documentos selecionados na sua própria conta do Google Drive.</li>
+        <li>Use o login do Google.</li>
+        <li>Compre o SmartScan Premium pelo Google Play.</li>
+    </ul>
+
+    <h2>2. Seus documentos</h2>
+    <p>Você mantém a propriedade dos documentos, imagens e textos que processa com o SmartScan.</p>
+    <p>O SmartScan não reivindica a propriedade dos seus documentos pessoais.</p>
+    <p>Você é responsável por garantir que tem o direito legal ou permissão para digitalizar, copiar, armazenar, processar ou fazer backup de qualquer documento usado com o SmartScan.</p>
+    <p>Você não deve usar o SmartScan para acessar, copiar, distribuir ou processar documentos de forma que viole a privacidade, os direitos autorais, a confidencialidade ou outros direitos legais de outra pessoa.</p>
+
+    <h2>3. Armazenamento local</h2>
+    <p>O SmartScan foi projetado para armazenar seus documentos e informações OCR no seu dispositivo.</p>
+    <p>Você é responsável por proteger seu dispositivo e manter backups de documentos importantes.</p>
+    <p>Se seu dispositivo for perdido, danificado, redefinido ou substituído, ou se o SmartScan for desinstalado ou seus dados de aplicativo forem apagados, documentos armazenados localmente podem ser perdidos permanentemente.</p>
+
+    <h2>4. Backup do Google Drive</h2>
+    <p>O Backup do Google Drive é um recurso opcional.</p>
+    <p>Se você ativá-lo, o SmartScan usa o login do Google e o Google Drive para fazer backup de documentos selecionados na sua própria conta do Google Drive.</p>
+    <p>O SmartScan não opera seu próprio serviço de armazenamento em nuvem para seus documentos.</p>
+    <p>Você é responsável pela sua conta Google e por gerenciar os arquivos armazenados no seu Google Drive.</p>
+    <p>Certifique-se de que sua conta Google esteja devidamente protegida.</p>
+    <p>Os termos e políticas aplicáveis do Google também valem quando você usa o Google Drive.</p>
+
+    <h2>5. Acesso à conta Google</h2>
+    <p>O SmartScan pode exigir login do Google para usar o Backup do Google Drive.</p>
+    <p>Ao usar o Backup do Google Drive, você autoriza o SmartScan a acessar os serviços do Google e as informações do Google Drive necessárias para fornecer o recurso de backup escolhido.</p>
+    <p>Você pode revogar o acesso do SmartScan nas configurações da sua Conta Google.</p>
+    <p>Se revogar o acesso, o Backup do Google Drive pode parar de funcionar até você autorizar de novo.</p>
+
+    <h2>6. OCR</h2>
+    <p>O SmartScan usa tecnologia OCR para reconhecer texto de documentos digitalizados, incluindo vários idiomas e escritas (como latim, chinês, japonês, coreano e devanágari) quando você os escolhe. A detecção de idioma do modo automático e o reconhecimento de texto são feitos no seu dispositivo.</p>
+    <p>Os resultados do OCR são gerados automaticamente e podem conter erros.</p>
+    <p>O SmartScan não garante que os resultados do OCR serão totalmente precisos, completos ou confiáveis.</p>
+    <p>Verifique informações importantes no documento original antes de confiar nos resultados do OCR.</p>
+
+    <h2>7. Câmera e digitalização</h2>
+    <p>O SmartScan usa a câmera do seu dispositivo quando você escolhe digitalizar um documento.</p>
+    <p>Você é responsável por garantir que tem permissão para fotografar, digitalizar, copiar ou processar os documentos usados com o SmartScan, incluindo qualquer foto importada da galeria do seu dispositivo para usar como página digitalizada.</p>
+    <p>O SmartScan não concede a você nenhum direito sobre documentos ou materiais de outras pessoas ou organizações.</p>
+
+    <h2>8. Publicidade</h2>
+    <p>A versão gratuita do SmartScan pode exibir anúncios fornecidos pelo Google AdMob.</p>
+    <p>A publicidade está sujeita às políticas e requisitos aplicáveis do Google.</p>
+    <p>O SmartScan não usa seus documentos digitalizados nem o texto OCR como material publicitário nem para selecionar anúncios.</p>
+    <p>O Premium pode remover anúncios conforme os recursos Premium oferecidos no aplicativo.</p>
+
+    <h2>9. SmartScan Premium</h2>
+    <p>O SmartScan pode oferecer recursos Premium pelo Google Play.</p>
+    <p>O preço e os recursos exibidos no momento da compra valem para a compra correspondente.</p>
+    <p>Os pagamentos são processados pelo Google Play.</p>
+    <p>O SmartScan não recebe nem armazena suas informações de cartão de pagamento.</p>
+    <p>Compras, reembolsos, cancelamentos e assuntos de pagamento estão sujeitos às políticas e procedimentos aplicáveis do Google Play.</p>
+
+    <h2>10. Notificações</h2>
+    <p>O SmartScan pode enviar notificações relacionadas a recursos do aplicativo, status do backup, lembretes, atualizações ou outras informações do app.</p>
+    <p>Você pode controlar as notificações nas configurações do seu dispositivo Android e, quando disponível, nas configurações do SmartScan.</p>
+
+    <h2>11. Uso aceitável</h2>
+    <p>Você concorda em não usar o SmartScan:</p>
+    <ul>
+        <li>Para fins ilícitos.</li>
+        <li>Para violar a privacidade ou os direitos de outra pessoa.</li>
+        <li>Para processar documentos aos quais não tem autorização de acesso ou cópia.</li>
+        <li>Para distribuir material ilegal ou nocivo.</li>
+        <li>Para interferir na operação do SmartScan.</li>
+        <li>Para tentar comprometer a segurança do SmartScan, dos serviços do Google ou da conta de outra pessoa.</li>
+        <li>Para contornar controles de segurança ou acesso.</li>
+        <li>De forma que viole leis ou regulamentos aplicáveis.</li>
+    </ul>
+
+    <h2>12. Disponibilidade e alterações</h2>
+    <p>Tentamos manter o SmartScan confiável e útil, mas não podemos garantir que o aplicativo estará sempre disponível, sem interrupções ou totalmente livre de erros.</p>
+    <p>Os recursos do SmartScan podem ser modificados, melhorados, suspensos ou descontinuados.</p>
+    <p>Serviços de terceiros usados pelo SmartScan, incluindo serviços do Google, também podem mudar, ficar temporariamente indisponíveis ou descontinuar recursos independentemente do SmartScan.</p>
+
+    <h2>13. Perda de dados e backups</h2>
+    <p>Você é responsável por manter backups adequados de documentos importantes.</p>
+    <p>O Backup do Google Drive é fornecido como uma comodidade de backup e não deve ser considerado um serviço garantido de arquivamento ou recuperação de desastres.</p>
+    <p>O SmartScan não é responsável por perda de dados causada por, por exemplo:</p>
+    <ul>
+        <li>Falha do dispositivo.</li>
+        <li>Exclusão acidental.</li>
+        <li>Perda ou roubo do seu dispositivo.</li>
+        <li>Falha do aplicativo ou do armazenamento.</li>
+        <li>Backup com falha ou incompleto.</li>
+        <li>Problemas do Google Drive ou interrupções do serviço.</li>
+        <li>Perda de acesso à sua conta Google.</li>
+        <li>Ações suas ou de outra pessoa com acesso ao seu dispositivo ou conta Google.</li>
+    </ul>
+
+    <h2>14. Serviços de terceiros</h2>
+    <p>O SmartScan depende de serviços de terceiros, principalmente serviços do Google, para certos recursos.</p>
+    <p>Esses serviços podem incluir:</p>
+    <ul>
+        <li>Login do Google</li>
+        <li>Google Drive</li>
+        <li>Google AdMob</li>
+        <li>Serviços de análise e relatórios de falhas</li>
+        <li>Cobrança do Google Play</li>
+    </ul>
+    <p>Serviços de terceiros são controlados por seus respectivos provedores e estão sujeitos aos próprios termos, políticas, disponibilidade e limitações.</p>
+
+    <h2>15. Isenção de responsabilidade</h2>
+    <p>Na máxima medida permitida pela lei aplicável, o SmartScan é fornecido "como está" e "conforme disponível".</p>
+    <p>Não garantimos que:</p>
+    <ul>
+        <li>Os resultados do OCR serão sempre precisos.</li>
+        <li>Cada documento será digitalizado com sucesso.</li>
+        <li>Cada operação de OCR terá sucesso.</li>
+        <li>O Backup do Google Drive sempre será concluído com sucesso.</li>
+        <li>Seus arquivos estarão sempre disponíveis.</li>
+        <li>O SmartScan funcionará sempre sem bugs ou interrupções.</li>
+        <li>Serviços de terceiros estarão sempre disponíveis.</li>
+        <li>O aplicativo atenderá cada propósito ou requisito específico.</li>
+    </ul>
+
+    <h2>16. Limitação de responsabilidade</h2>
+    <p>Na máxima medida permitida pela lei aplicável, o SmartScan e seu desenvolvedor não serão responsáveis por danos indiretos, incidentais, especiais, consequentes ou inesperados decorrentes do seu uso ou impossibilidade de uso do aplicativo.</p>
+    <p>Isso pode incluir, onde legalmente permitido, perda de dados resultante de falha do dispositivo, exclusão acidental, falha do aplicativo, problemas de armazenamento, falha de backup, problemas de sincronização, problemas do Google Drive ou outras interrupções de serviços de terceiros.</p>
+    <p>Nada nestes Termos pretende excluir ou limitar qualquer responsabilidade ou direito legal que não possa legalmente ser excluído ou limitado.</p>
+
+    <h2>17. Privacidade</h2>
+    <p>Seu uso do SmartScan também é regido pela <a href="https://calguard.github.io/privacy-pt">Política de Privacidade</a> do SmartScan.</p>
+    <p>A Política de Privacidade explica quais informações o SmartScan acessa e como os serviços do Google podem processar informações quando você usa recursos como login do Google, Backup do Google Drive, publicidade, análise, relatórios de falhas e compras do Google Play.</p>
+
+    <h2>18. Requisito de idade</h2>
+    <p>O SmartScan é destinado a usuários com 13 anos ou mais.</p>
+    <p>Se você tem menos de 13 anos, não use o SmartScan.</p>
+    <p>Ao usar o SmartScan, você confirma que atende ao requisito de idade aplicável.</p>
+
+    <h2>19. Alterações a estes Termos</h2>
+    <p>Podemos atualizar estes Termos quando os recursos, serviços ou requisitos legais do SmartScan mudarem.</p>
+    <p>Quando fizermos alterações importantes, atualizaremos a data de "Última atualização" no fim destes Termos e, quando apropriado, daremos aviso adicional pelo aplicativo.</p>
+    <p>Seu uso continuado do SmartScan após a vigência dos Termos atualizados significa que você aceita os Termos atualizados, na medida permitida pela lei aplicável.</p>
+
+    <h2>20. Contato</h2>
+    <p>Se tiver dúvidas sobre estes Termos ou o SmartScan, entre em contato:</p>
+    <p>E-mail: <span style="color:#607AFB; text-decoration:underline">aenage@gmail.com</span></p>
+    <p>Desenvolvedor: AEnage Dev</p>
+    <p>Ao usar o SmartScan, você reconhece que leu e entendeu estes Termos de Serviço.</p>
+
+    <hr>
+    <p class="meta">Última atualização: setembro de 2026 &nbsp;|&nbsp; SmartScan versão 1.0.16</p>
+    <script>
+        if (location.search.includes('app=1')) {
+            document.querySelector('h1').style.display = 'none'
+        }
+    </script>
+</body>
+</html>
